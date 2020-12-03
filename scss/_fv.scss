@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import "_variable";
+
+.fv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.5rem;
+  padding-right: convertVw(196, 1500);
+  padding-left: convertVw(217, 1500);
+
+  &__logo {
+    position: absolute;
+    top: 10%;
+    &__outer {
+      position: relative;
+      width: 10%;
+    }
+    object-fit: contain;
+  }
+  &__img {
+    width: 79%;
+    position: relative;
+    background-image: url(../img/kv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 56rem;
+    border-radius: 20.7rem;
+    &__outer {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__title {
+    font-size: 2.8rem;
+    color: $base-text-color;
+    background-color: #fbf9f7;
+
+    &:not(:first-child) {
+      margin-top: 1.5rem;
+    }
+
+    &__box {
+      position: absolute;
+      top: 72%;
+      left: -9%;
+      text-align: left;
+    }
+  }
+}
+
+/***********************************
+* break-point-tablet 1110以下
+***********************************/
+
+@media (max-width: $tablet-window-size) {
+  .fv {
+    padding-left: convertVw(100, 1109);
+    padding-right: convertVw(100, 1109);
+
+    &__logo {
+      width: convertVw(100, 1109);
+      height: convertVw(380, 1109);
+    }
+
+    &__img {
+      width: convertVw(718, 1109);
+      height: convertVw(560, 1109);
+      border-radius: convertVw(207, 1109);
+    }
+
+    &__title {
+      font-size: convertVw(25, 1109);
+    }
+  }
+}
+/***********************************
+* break-point-sp 767px以下
+***********************************/
+
+/***********************************
+* break-point-sp500 500px以下
+***********************************/

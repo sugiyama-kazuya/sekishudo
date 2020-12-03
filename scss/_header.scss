@@ -3,10 +3,83 @@
 @import "_function";
 @import "_mixin";
 
+.header {
+  padding-left: convertVw(171, 1500);
+  padding-right: convertVw(168, 1500);
+  height: 5.4rem;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+
+    &__right {
+      display: flex;
+      width: 71%;
+      height: 100%;
+    }
+
+    &__left {
+      width: 29%;
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  &__nav {
+    &__inner {
+      display: flex;
+    }
+  }
+
+  &__logo {
+    object-fit: contain;
+    z-index: $z-index-xl;
+  }
+
+  &__burger-btn {
+    width: 3.4rem;
+    display: flex;
+    align-items: center;
+
+    &__outer {
+      width: 11%;
+      display: flex;
+      justify-content: flex-end;
+      z-index: $z-index-xl;
+    }
+
+    &__bars {
+      width: 100%;
+    }
+
+    &__bar {
+      background-color: $base-text-color;
+      border-radius: 1.5px;
+      display: block;
+      width: 100%;
+      height: 3px;
+      &:first-child {
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+
 /***********************************
-* break-point-tablet
+* break-point-tablet 1110以下
+***********************************/
+
+@media (max-width: $tablet-window-size) {
+  .header {
+    padding-left: convertVw(140, 1109);
+    padding-right: convertVw(140, 1109);
+  }
+}
+/***********************************
+* break-point-sp 767px以下
 ***********************************/
 
 /***********************************
-* break-point-sp
+* break-point-sp500 500px以下
 ***********************************/

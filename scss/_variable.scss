@@ -4,43 +4,73 @@
 * font
 ***********************************/
 
-// family
-$font-family: sans-serif;
+/* 使用フォント
+* M PLUS Rounded 1c
+* M PLUS Rounded 1c-Bold
+* SourceHanSansJP
+* GloriaHallelujah
+* CenturyGothic
+*/
 
-// size
-$font-size-xxs: 5rem;
-$font-size-xs: 5rem;
-$font-size-s: 5rem;
-$font-size-sm: 5rem;
-$font-size-m: 5rem;
-$font-size-l: 5rem;
-$font-size-ll: 5rem;
-$font-size-3l: 5rem;
-$font-size-xl: 5rem;
+// family
+@font-face {
+  font-family: "m-plus-rounded-1c-regular";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "m-plus-rounded-1c-bold";
+  src: url("../fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "sourcehansans-jp-regular";
+  src: url("../fonts/SourceHanSans-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "gloria-hallelujah";
+  src: url("../fonts/GloriaHallelujah-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "century-gothic";
+  src: url("../fonts/CenturyGothic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "century-gothic-bold";
+  src: url("../fonts/GOTHICB0.TTF") format("truetype");
+}
 
 /***********************************
 * color
 ***********************************/
 
-$theme-color: #fff;
-$sub-color: #fff;
-
 // text
-$base-text-color: #fff;
-$sub-text-color-1: #fff;
-$sub-text-color-2: #fff;
+$base-text-color: #5e4331;
+$text-black: #494949;
+$text-white: #ffffff;
+$text-gray: #8e8d8d;
+$text-light-gray: #818181;
+
+$contact-item-tag-color: #d77358;
+$contact-text-color: #fbf9f7;
+
+$company-tag-color: #e4ddd8;
+$company-content-color: #fbf9f7;
 
 // background
-$base-bg-color: #fff;
-$sub-bg-color: #fff;
+$base-bg-color: #5e4331;
+$sub-bg-color: #fbf9f7;
+$menu-bg-color: #f2eee9;
+
+// border
+$menu-border-color: #cecece;
 
 /***********************************
 * break-point
 ***********************************/
 
-$pc-window-size: 1920px;
-$tablet-window-size: 785px;
-$sp-window-size: 390px;
+$pc-window-size: 1500px;
+$tablet-window-size: 1109px;
+$sp-window-size: 767px;
+$sp500-window-size: 500px;
 
 /***********************************
 * z-index

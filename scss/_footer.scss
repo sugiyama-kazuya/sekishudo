@@ -1,8 +1,27 @@
 @charset "UTF-8";
-@import "_variable";
-@import "_function";
-@import "_mixin";
 
+.footer {
+  padding-right: convertVw(167, 1500);
+  padding-left: convertVw(167, 1500);
+  padding-bottom: 5rem;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copy-right {
+    display: flex;
+    align-items: center;
+
+    font: {
+      size: 1.25rem;
+      family: "gloria-hallelujah";
+    }
+    color: $base-text-color;
+    letter-spacing: 0.11em;
+  }
+}
 /***********************************
 * break-point-tablet
 ***********************************/

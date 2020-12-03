@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.news {
+  margin: 4.2rem -1rem 5rem -1rem;
+  display: flex;
+  flex-wrap: wrap;
+  letter-spacing: 0.03em;
+
+  &__box {
+    width: calc(100% / 4);
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 25%;
+  }
+
+  &__date {
+    font-size: 1.3rem;
+    color: $text-gray;
+    margin-top: 8px;
+    display: block;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    color: $text-black;
+    line-height: 1.6;
+  }
+}
+
+/***********************************
+* break-point-tablet 1110以下
+***********************************/
+
+@media (max-width: $tablet-window-size) {
+  .news {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    
+    &__date {
+      font-size: convertVw(11, 1109);
+      margin-bottom: 4px;
+    }
+
+    &__title {
+      font-size: convertVw(13, 1109);
+    }
+  }
+}

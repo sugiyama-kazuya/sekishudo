@@ -1,11 +1,430 @@
+@charset "UTF-8";
 /***********************************
 * font
 ***********************************/
+/* 使用フォント
+* M PLUS Rounded 1c
+* M PLUS Rounded 1c-Bold
+* SourceHanSansJP
+* GloriaHallelujah
+* CenturyGothic
+*/
+@font-face {
+  font-family: "m-plus-rounded-1c-regular";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-plus-rounded-1c-bold";
+  src: url("../fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sourcehansans-jp-regular";
+  src: url("../fonts/SourceHanSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gloria-hallelujah";
+  src: url("../fonts/GloriaHallelujah-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic";
+  src: url("../fonts/CenturyGothic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic-bold";
+  src: url("../fonts/GOTHICB0.TTF") format("truetype");
+}
+
 /***********************************
 * color
 ***********************************/
 /***********************************
 * break-point
+***********************************/
+/***********************************
+* z-index
+***********************************/
+/***********************************
+* font
+***********************************/
+/* 使用フォント
+* M PLUS Rounded 1c
+* M PLUS Rounded 1c-Bold
+* SourceHanSansJP
+* GloriaHallelujah
+* CenturyGothic
+*/
+@font-face {
+  font-family: "m-plus-rounded-1c-regular";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-plus-rounded-1c-bold";
+  src: url("../fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sourcehansans-jp-regular";
+  src: url("../fonts/SourceHanSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gloria-hallelujah";
+  src: url("../fonts/GloriaHallelujah-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic";
+  src: url("../fonts/CenturyGothic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic-bold";
+  src: url("../fonts/GOTHICB0.TTF") format("truetype");
+}
+
+/***********************************
+* color
+***********************************/
+/***********************************
+* break-point
+***********************************/
+/***********************************
+* z-index
+***********************************/
+/***********************************
+* font
+***********************************/
+/* 使用フォント
+* M PLUS Rounded 1c
+* M PLUS Rounded 1c-Bold
+* SourceHanSansJP
+* GloriaHallelujah
+* CenturyGothic
+*/
+@font-face {
+  font-family: "m-plus-rounded-1c-regular";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-plus-rounded-1c-bold";
+  src: url("../fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sourcehansans-jp-regular";
+  src: url("../fonts/SourceHanSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gloria-hallelujah";
+  src: url("../fonts/GloriaHallelujah-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic";
+  src: url("../fonts/CenturyGothic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic-bold";
+  src: url("../fonts/GOTHICB0.TTF") format("truetype");
+}
+
+/***********************************
+* color
+***********************************/
+/***********************************
+* break-point
+***********************************/
+/***********************************
+* z-index
+***********************************/
+/***********************************
+* font
+***********************************/
+/* 使用フォント
+* M PLUS Rounded 1c
+* M PLUS Rounded 1c-Bold
+* SourceHanSansJP
+* GloriaHallelujah
+* CenturyGothic
+*/
+@font-face {
+  font-family: "m-plus-rounded-1c-regular";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-plus-rounded-1c-bold";
+  src: url("../fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sourcehansans-jp-regular";
+  src: url("../fonts/SourceHanSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gloria-hallelujah";
+  src: url("../fonts/GloriaHallelujah-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic";
+  src: url("../fonts/CenturyGothic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic-bold";
+  src: url("../fonts/GOTHICB0.TTF") format("truetype");
+}
+
+/***********************************
+* color
+***********************************/
+/***********************************
+* break-point
+***********************************/
+/***********************************
+* z-index
+***********************************/
+.header {
+  padding-left: 11.4vw;
+  padding-right: 11.2vw;
+  height: 5.4rem;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.header__inner__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 71%;
+  height: 100%;
+}
+
+.header__inner__left {
+  width: 29%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header__nav__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 70;
+}
+
+.header__burger-btn {
+  width: 3.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__burger-btn__outer {
+  width: 11%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  z-index: 70;
+}
+
+.header__burger-btn__bars {
+  width: 100%;
+}
+
+.header__burger-btn__bar {
+  background-color: #5e4331;
+  border-radius: 1.5px;
+  display: block;
+  width: 100%;
+  height: 3px;
+}
+
+.header__burger-btn__bar:first-child {
+  margin-bottom: 4px;
+}
+
+/***********************************
+* break-point-tablet 1110以下
+***********************************/
+@media (max-width: 1109px) {
+  .header {
+    padding-left: 12.62399vw;
+    padding-right: 12.62399vw;
+  }
+}
+
+/***********************************
+* break-point-sp 767px以下
+***********************************/
+/***********************************
+* break-point-sp500 500px以下
+***********************************/
+.footer {
+  padding-right: 11.13333vw;
+  padding-left: 11.13333vw;
+  padding-bottom: 5rem;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__copy-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.25rem;
+  font-family: "gloria-hallelujah";
+  color: #5e4331;
+  letter-spacing: 0.11em;
+}
+
+/***********************************
+* break-point-tablet
+***********************************/
+/***********************************
+* break-point-sp
+***********************************/
+/***********************************
+* font
+***********************************/
+/* 使用フォント
+* M PLUS Rounded 1c
+* M PLUS Rounded 1c-Bold
+* SourceHanSansJP
+* GloriaHallelujah
+* CenturyGothic
+*/
+@font-face {
+  font-family: "m-plus-rounded-1c-regular";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-plus-rounded-1c-bold";
+  src: url("../fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sourcehansans-jp-regular";
+  src: url("../fonts/SourceHanSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gloria-hallelujah";
+  src: url("../fonts/GloriaHallelujah-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic";
+  src: url("../fonts/CenturyGothic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic-bold";
+  src: url("../fonts/GOTHICB0.TTF") format("truetype");
+}
+
+/***********************************
+* color
+***********************************/
+/***********************************
+* break-point
+***********************************/
+/***********************************
+* z-index
+***********************************/
+/***********************************
+* font
+***********************************/
+/* 使用フォント
+* M PLUS Rounded 1c
+* M PLUS Rounded 1c-Bold
+* SourceHanSansJP
+* GloriaHallelujah
+* CenturyGothic
+*/
+@font-face {
+  font-family: "m-plus-rounded-1c-regular";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-plus-rounded-1c-bold";
+  src: url("../fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sourcehansans-jp-regular";
+  src: url("../fonts/SourceHanSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gloria-hallelujah";
+  src: url("../fonts/GloriaHallelujah-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic";
+  src: url("../fonts/CenturyGothic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic-bold";
+  src: url("../fonts/GOTHICB0.TTF") format("truetype");
+}
+
+/***********************************
+* color
+***********************************/
+/***********************************
+* break-point
+***********************************/
+/***********************************
+* z-index
 ***********************************/
 /***********************************
 * common
@@ -14,18 +433,1487 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
+  font-family: "sourcehansans-jp-regular";
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.site-map {
+  border-radius: 66px;
+  border: solid 13px #ffffff;
+  margin-top: 4rem;
+}
+
+.global-btn {
+  font-size: 1.5rem;
+  font-family: "gloria-hallelujah";
+  width: 100%;
+  height: 100%;
+  border-radius: 2.7rem;
+  background-color: #5e4331;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.global-btn__outer {
+  width: 23.7rem;
+  height: 5.5rem;
+  margin: 0 auto;
 }
 
 /***********************************
-* header
+* break-point-tablet 1110以下
+***********************************/
+@media (max-width: 1109px) {
+  .global-btn {
+    font-size: 1.3rem;
+    border-radius: 2.4rem;
+  }
+  .global-btn__outer {
+    width: 21.3rem;
+    height: 4.9rem;
+    margin: 0 auto;
+  }
+}
+
+/***********************************
+* break-point-sp 767px以下
 ***********************************/
 /***********************************
-* kv
+* break-point-sp500 500px以下
+***********************************/
+.section {
+  padding-left: 13vw;
+  padding-right: 13vw;
+}
+
+.section__concept {
+  margin-top: 11.1rem;
+}
+
+.section__news {
+  margin-top: 10rem;
+}
+
+.section__menu-list {
+  margin-top: 11rem;
+  padding: 0;
+}
+
+.section__post-location {
+  margin-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.section__contact {
+  padding: 0;
+  background-color: #5e4331;
+  border-radius: 338px;
+  padding-top: 7rem;
+}
+
+.section__company {
+  padding: 0 0 8.5rem 0;
+  margin-top: 9rem;
+}
+
+.section__title__outer {
+  text-align: center;
+}
+
+.section__title-en {
+  font-size: 2.2rem;
+  font-family: "gloria-hallelujah";
+  color: #5e4331;
+  line-height: 1.2;
+  position: relative;
+}
+
+.section__title-en--current::before {
+  content: "• • • • • • • •";
+  position: absolute;
+  bottom: -27%;
+  left: -60%;
+}
+
+.section__title-en--current::after {
+  content: "• • • • • • • •";
+  position: absolute;
+  bottom: -27%;
+  right: -60%;
+}
+
+.section__title-en--news::before {
+  content: "• • • • • • • •";
+  position: absolute;
+  bottom: -28%;
+  left: -488%;
+}
+
+.section__title-en--news::after {
+  content: "• • • • • • • •";
+  position: absolute;
+  bottom: -28%;
+  right: -488%;
+}
+
+.section__title-en--menu-list::before {
+  content: "• • • • • • • •";
+  position: absolute;
+  bottom: -28%;
+  left: -380%;
+}
+
+.section__title-en--menu-list::after {
+  content: "• • • • • • • •";
+  position: absolute;
+  bottom: -28%;
+  right: -380%;
+}
+
+.section__title-en--post-location::before {
+  content: "• • • • • • • •";
+  position: absolute;
+  bottom: -39%;
+  left: -89%;
+}
+
+.section__title-en--post-location::after {
+  content: "• • • • • • • •";
+  position: absolute;
+  bottom: -39%;
+  right: -89%;
+}
+
+.section__title-en--contact {
+  color: #fff;
+}
+
+.section__title-en--contact::before {
+  content: "• • • • • • • •";
+  position: absolute;
+  bottom: -39%;
+  left: -230%;
+}
+
+.section__title-en--contact::after {
+  content: "• • • • • • • •";
+  position: absolute;
+  bottom: -39%;
+  right: -230%;
+}
+
+.section__title-ja {
+  font-size: 3.25rem;
+  font-family: "m-plus-rounded-1c-regular";
+  color: #5e4331;
+  line-height: 1.52;
+  letter-spacing: 0.05em;
+}
+
+.section__title-ja--white {
+  color: #fff;
+}
+
+/***********************************
+* break-point-tablet 1110以下
+***********************************/
+@media (max-width: 1109px) {
+  .section {
+    padding-right: 9.91885vw;
+    padding-left: 9.91885vw;
+    margin-top: 12rem;
+  }
+  .section__title-en {
+    font-size: 1.7rem;
+  }
+  .section__title-ja {
+    font-size: 2.5rem;
+  }
+  .section__concept {
+    margin-top: 9.91885vw;
+  }
+  .section__menu-list {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/***********************************
+* font
+***********************************/
+/* 使用フォント
+* M PLUS Rounded 1c
+* M PLUS Rounded 1c-Bold
+* SourceHanSansJP
+* GloriaHallelujah
+* CenturyGothic
+*/
+@font-face {
+  font-family: "m-plus-rounded-1c-regular";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-plus-rounded-1c-bold";
+  src: url("../fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sourcehansans-jp-regular";
+  src: url("../fonts/SourceHanSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gloria-hallelujah";
+  src: url("../fonts/GloriaHallelujah-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic";
+  src: url("../fonts/CenturyGothic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic-bold";
+  src: url("../fonts/GOTHICB0.TTF") format("truetype");
+}
+
+/***********************************
+* color
 ***********************************/
 /***********************************
-* main
+* break-point
 ***********************************/
 /***********************************
-* footer
+* z-index
 ***********************************/
+/***********************************
+* font
+***********************************/
+/* 使用フォント
+* M PLUS Rounded 1c
+* M PLUS Rounded 1c-Bold
+* SourceHanSansJP
+* GloriaHallelujah
+* CenturyGothic
+*/
+@font-face {
+  font-family: "m-plus-rounded-1c-regular";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-plus-rounded-1c-bold";
+  src: url("../fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sourcehansans-jp-regular";
+  src: url("../fonts/SourceHanSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gloria-hallelujah";
+  src: url("../fonts/GloriaHallelujah-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic";
+  src: url("../fonts/CenturyGothic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic-bold";
+  src: url("../fonts/GOTHICB0.TTF") format("truetype");
+}
+
+/***********************************
+* color
+***********************************/
+/***********************************
+* break-point
+***********************************/
+/***********************************
+* z-index
+***********************************/
+/***********************************
+* break-point-tablet
+***********************************/
+/***********************************
+* break-point-sp
+***********************************/
+/***********************************
+* font
+***********************************/
+/* 使用フォント
+* M PLUS Rounded 1c
+* M PLUS Rounded 1c-Bold
+* SourceHanSansJP
+* GloriaHallelujah
+* CenturyGothic
+*/
+@font-face {
+  font-family: "m-plus-rounded-1c-regular";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-plus-rounded-1c-bold";
+  src: url("../fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sourcehansans-jp-regular";
+  src: url("../fonts/SourceHanSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gloria-hallelujah";
+  src: url("../fonts/GloriaHallelujah-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic";
+  src: url("../fonts/CenturyGothic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic-bold";
+  src: url("../fonts/GOTHICB0.TTF") format("truetype");
+}
+
+/***********************************
+* color
+***********************************/
+/***********************************
+* break-point
+***********************************/
+/***********************************
+* z-index
+***********************************/
+/***********************************
+* font
+***********************************/
+/* 使用フォント
+* M PLUS Rounded 1c
+* M PLUS Rounded 1c-Bold
+* SourceHanSansJP
+* GloriaHallelujah
+* CenturyGothic
+*/
+@font-face {
+  font-family: "m-plus-rounded-1c-regular";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-plus-rounded-1c-bold";
+  src: url("../fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sourcehansans-jp-regular";
+  src: url("../fonts/SourceHanSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gloria-hallelujah";
+  src: url("../fonts/GloriaHallelujah-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic";
+  src: url("../fonts/CenturyGothic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic-bold";
+  src: url("../fonts/GOTHICB0.TTF") format("truetype");
+}
+
+/***********************************
+* color
+***********************************/
+/***********************************
+* break-point
+***********************************/
+/***********************************
+* z-index
+***********************************/
+.global-nav {
+  width: 89%;
+  height: 100%;
+  font-family: "m-plus-rounded-1c-regular";
+}
+
+.global-nav--track-icon:before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 3px;
+  background-image: url(../img/track-icon.png);
+  background-size: contain;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+}
+
+.global-nav--calendar-icon:before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 3px;
+  background-image: url(../img/kareder-icon.png);
+  background-size: contain;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+}
+
+.global-nav--menu-icon:before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 3px;
+  background-image: url(../img/burger-icon.png);
+  background-size: contain;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+}
+
+.global-nav__inner {
+  background-color: #5e4331;
+  border-bottom-right-radius: 50% 180%;
+  border-bottom-left-radius: 50% 180%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.global-nav__item {
+  font-size: 1.4rem;
+  letter-spacing: 0.03em;
+}
+
+.global-nav__item:not(:last-child) {
+  margin-right: 5.5rem;
+}
+
+.global-nav__item__link {
+  color: #ffffff;
+  position: relative;
+}
+
+/***********************************
+* break-point-tablet 1110以下
+***********************************/
+@media (max-width: 1109px) {
+  .global-nav.global-nav--hide {
+    visibility: hidden;
+  }
+}
+
+/***********************************
+* break-point-sp 767px以下
+***********************************/
+/***********************************
+* break-point-sp500 500px以下
+***********************************/
+/***********************************
+* font
+***********************************/
+/* 使用フォント
+* M PLUS Rounded 1c
+* M PLUS Rounded 1c-Bold
+* SourceHanSansJP
+* GloriaHallelujah
+* CenturyGothic
+*/
+@font-face {
+  font-family: "m-plus-rounded-1c-regular";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-plus-rounded-1c-bold";
+  src: url("../fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sourcehansans-jp-regular";
+  src: url("../fonts/SourceHanSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gloria-hallelujah";
+  src: url("../fonts/GloriaHallelujah-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic";
+  src: url("../fonts/CenturyGothic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic-bold";
+  src: url("../fonts/GOTHICB0.TTF") format("truetype");
+}
+
+/***********************************
+* color
+***********************************/
+/***********************************
+* break-point
+***********************************/
+/***********************************
+* z-index
+***********************************/
+.burger-menu__pc {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+  font-family: "m-plus-rounded-1c-regular";
+  padding-top: 5.4rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fbf9f7;
+  color: #fff;
+  z-index: 10;
+  visibility: hidden;
+}
+
+.burger-menu__sp {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+  font-family: "m-plus-rounded-1c-regular";
+  padding-top: 5.4rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fbf9f7;
+  z-index: 20;
+  visibility: hidden;
+}
+
+.burger-menu__item:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.burger-menu__item__link {
+  color: #5e4331;
+}
+
+/***********************************
+* font
+***********************************/
+/* 使用フォント
+* M PLUS Rounded 1c
+* M PLUS Rounded 1c-Bold
+* SourceHanSansJP
+* GloriaHallelujah
+* CenturyGothic
+*/
+@font-face {
+  font-family: "m-plus-rounded-1c-regular";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-plus-rounded-1c-bold";
+  src: url("../fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sourcehansans-jp-regular";
+  src: url("../fonts/SourceHanSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gloria-hallelujah";
+  src: url("../fonts/GloriaHallelujah-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic";
+  src: url("../fonts/CenturyGothic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic-bold";
+  src: url("../fonts/GOTHICB0.TTF") format("truetype");
+}
+
+/***********************************
+* color
+***********************************/
+/***********************************
+* break-point
+***********************************/
+/***********************************
+* z-index
+***********************************/
+.fv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3.5rem;
+  padding-right: 13.06667vw;
+  padding-left: 14.46667vw;
+}
+
+.fv__logo {
+  position: absolute;
+  top: 10%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.fv__logo__outer {
+  position: relative;
+  width: 10%;
+}
+
+.fv__img {
+  width: 79%;
+  position: relative;
+  background-image: url(../img/kv.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 56rem;
+  border-radius: 20.7rem;
+}
+
+.fv__img__outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.fv__title {
+  font-size: 2.8rem;
+  color: #5e4331;
+  background-color: #fbf9f7;
+}
+
+.fv__title:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.fv__title__box {
+  position: absolute;
+  top: 72%;
+  left: -9%;
+  text-align: left;
+}
+
+/***********************************
+* break-point-tablet 1110以下
+***********************************/
+@media (max-width: 1109px) {
+  .fv {
+    padding-left: 9.01713vw;
+    padding-right: 9.01713vw;
+  }
+  .fv__logo {
+    width: 9.01713vw;
+    height: 34.2651vw;
+  }
+  .fv__img {
+    width: 64.74301vw;
+    height: 50.49594vw;
+    border-radius: 18.66546vw;
+  }
+  .fv__title {
+    font-size: 2.25428vw;
+  }
+}
+
+/***********************************
+* break-point-sp 767px以下
+***********************************/
+/***********************************
+* break-point-sp500 500px以下
+***********************************/
+/***********************************
+* font
+***********************************/
+/* 使用フォント
+* M PLUS Rounded 1c
+* M PLUS Rounded 1c-Bold
+* SourceHanSansJP
+* GloriaHallelujah
+* CenturyGothic
+*/
+@font-face {
+  font-family: "m-plus-rounded-1c-regular";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-plus-rounded-1c-bold";
+  src: url("../fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sourcehansans-jp-regular";
+  src: url("../fonts/SourceHanSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gloria-hallelujah";
+  src: url("../fonts/GloriaHallelujah-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic";
+  src: url("../fonts/CenturyGothic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic-bold";
+  src: url("../fonts/GOTHICB0.TTF") format("truetype");
+}
+
+/***********************************
+* color
+***********************************/
+/***********************************
+* break-point
+***********************************/
+/***********************************
+* z-index
+***********************************/
+.concept {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 9.1rem;
+}
+
+.concept__img {
+  border-radius: 39%;
+  width: 37.13333vw;
+  height: 34.73333vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.concept__content-box {
+  width: 43.5%;
+  text-align: left;
+  padding: 4.6rem 0;
+}
+
+.concept__title {
+  font-size: 3.06667vw;
+  font-family: "m-plus-rounded-1c-bold";
+  color: #5e4331;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+  width: 130%;
+}
+
+.concept__text {
+  padding-top: 3.9rem;
+  font-size: 1vw;
+  color: #494949;
+  line-height: 1.94;
+}
+
+/***********************************
+* break-point-tablet 1110以下
+***********************************/
+@media (max-width: 1109px) {
+  .concept {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-bottom: 0;
+    margin-top: 9.91885vw;
+  }
+  .concept__img {
+    border-radius: 39%;
+    width: 37.60144vw;
+    height: 35.16682vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .concept__title {
+    font-size: 2.70514vw;
+    width: 120%;
+  }
+  .concept__content-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    width: 40%;
+    text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .concept__text {
+    padding-top: 1.80343vw;
+    font-size: 0.99188vw;
+    color: #494949;
+    line-height: 1.94;
+  }
+}
+
+.current-location__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6rem;
+}
+
+.current-location__box__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.current-location__box__upper-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 7px;
+}
+
+.current-location__box__lower-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.current-location__item {
+  width: 11.7rem;
+  height: 2.7rem;
+  border-radius: 1.35rem;
+  background-color: #5e4331;
+  font-size: 1.5rem;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0.03em;
+}
+
+.current-location__content {
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 1.4rem;
+  letter-spacing: 0.03em;
+}
+
+.current-location__content:not(:last-child) {
+  padding-right: 3.4rem;
+}
+
+/***********************************
+* break-point-tablet 1110以下
+***********************************/
+@media (max-width: 1109px) {
+  .current-location__box {
+    margin-top: 5.41028vw;
+  }
+  .current-location__item {
+    font-size: 1.17223vw;
+    width: 9.91885vw;
+    height: 2.43463vw;
+    border-radius: 1.17223vw;
+  }
+  .current-location__content {
+    font-size: 1.17223vw;
+    padding-left: 1.2624vw;
+  }
+  .current-location__content:not(:last-child) {
+    padding-right: 3.06583vw;
+  }
+}
+
+/***********************************
+* break-point-sp 767px以下
+***********************************/
+/***********************************
+* break-point-sp500 500px以下
+***********************************/
+.news {
+  margin: 4.2rem -1rem 5rem -1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  letter-spacing: 0.03em;
+}
+
+.news__box {
+  width: calc(100% / 4);
+  padding: 0 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.news__img {
+  width: 100%;
+  border-radius: 25%;
+}
+
+.news__date {
+  font-size: 1.3rem;
+  color: #8e8d8d;
+  margin-top: 8px;
+  display: block;
+}
+
+.news__title {
+  font-size: 1.5rem;
+  color: #494949;
+  line-height: 1.6;
+}
+
+/***********************************
+* break-point-tablet 1110以下
+***********************************/
+@media (max-width: 1109px) {
+  .news {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .news__date {
+    font-size: 0.99188vw;
+    margin-bottom: 4px;
+  }
+  .news__title {
+    font-size: 1.17223vw;
+  }
+}
+
+.menu-list {
+  background-color: #f2eee9;
+  border-radius: 22.53333vw;
+  margin-top: 4.5rem;
+  padding-bottom: 9rem;
+}
+
+.menu-list__upper-row {
+  padding-left: 13vw;
+  padding-right: 13vw;
+  padding-top: 9.5rem;
+}
+
+.menu-list__upper-row__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #cecece;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.menu-list__upper-row__box {
+  width: calc(100% / 5);
+  padding: 0 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.menu-list__upper-row__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 36%;
+  margin-bottom: 7px;
+}
+
+.menu-list__upper-row__title {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #494949;
+}
+
+.menu-list__upper-row__price {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #8e8d8d;
+  margin-bottom: 4rem;
+}
+
+.menu-list__lower-row {
+  padding-left: 13vw;
+  padding-right: 13vw;
+  margin-bottom: 2.5rem;
+}
+
+.menu-list__lower-row__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -1rem;
+  padding-top: 4.5rem;
+}
+
+.menu-list__lower-row__box {
+  width: calc(100% / 5);
+  padding: 0 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+
+.menu-list__lower-row__box:not(:nth-child(5n)):after {
+  content: "";
+  position: absolute;
+  width: 31px;
+  height: 1px;
+  top: 37%;
+  right: -2%;
+  background-color: #5e4331;
+  -webkit-transform: rotate(136deg);
+          transform: rotate(136deg);
+}
+
+.menu-list__lower-row__title {
+  font-size: 1.55rem;
+  color: #494949;
+  margin-bottom: 0.5rem;
+}
+
+.menu-list__lower-row__price {
+  font-size: 1.35rem;
+  color: #8e8d8d;
+  margin-bottom: 2.5rem;
+}
+
+/***********************************
+* break-point-tablet 1110以下
+***********************************/
+@media (max-width: 1109px) {
+  .menu-list__upper-row {
+    padding-left: 9.91885vw;
+    padding-right: 9.91885vw;
+  }
+  .menu-list__upper-row__box {
+    width: calc(100% / 4);
+  }
+  .menu-list__upper-row__img {
+    margin-bottom: 1.5rem;
+  }
+  .menu-list__upper-row__title {
+    font-size: 1.44274vw;
+    text-align: center;
+    color: #494949;
+  }
+  .menu-list__upper-row__price {
+    font-size: 1.2624vw;
+    color: #8e8d8d;
+    margin-bottom: 5rem;
+  }
+  .menu-list__lower-row {
+    padding-left: 9.91885vw;
+    padding-right: 9.91885vw;
+  }
+  .menu-list__lower-row__box {
+    width: calc(100% / 4);
+  }
+  .menu-list__lower-row__box:not(:nth-child(4n)):after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 1px;
+    top: 37%;
+    right: -2%;
+    background-color: #5e4331;
+    -webkit-transform: rotate(136deg);
+            transform: rotate(136deg);
+  }
+  .menu-list__lower-row__title {
+    font-size: 1.2624vw;
+  }
+  .menu-list__lower-row__price {
+    font-size: 1.08206vw;
+  }
+}
+
+/***********************************
+* break-point-sp 767px以下
+***********************************/
+/***********************************
+* break-point-sp500 500px以下
+***********************************/
+.post-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 6rem -4rem 2rem -4rem;
+}
+
+.post-location__box {
+  width: calc(100% / 2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 4rem;
+  margin-bottom: 3rem;
+}
+
+.post-location__img {
+  border-radius: 66px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.post-location__content-wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1rem 0 1rem 1.5rem;
+}
+
+.post-location__date {
+  font-size: 13px;
+  color: #8e8d8d;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.post-location__title {
+  font-size: 15px;
+  color: #494949;
+  margin-bottom: 1rem;
+}
+
+.post-location__text {
+  font-size: 12px;
+  color: #8e8d8d;
+}
+
+.contact__name__name, .contact__name__surname, .contact__email {
+  padding: 0 0.5rem;
+  height: 4rem;
+  border-radius: 1.2rem;
+  border: solid 1px #d3cfc8;
+  background-color: #fbf9f7;
+}
+
+.contact {
+  margin-top: 4rem;
+  text-align: center;
+  padding-bottom: 7rem;
+}
+
+.contact__btn {
+  width: 23.7rem;
+  height: 5.5rem;
+  border-radius: 2.75rem;
+  background-color: #fbf9f7;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-family: "gloria-hallelujah";
+  color: #5e4331;
+}
+
+.contact__form {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fbf9f7;
+  grid-template: "require tag form" / 5.3rem 20.7rem 34.9rem;
+}
+
+.contact__form:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.contact__form__content {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact__name__outer {
+  grid-area: form;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__name__name {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 1rem;
+}
+
+.contact__name__surname {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact__email {
+  grid-area: form;
+}
+
+.contact__content {
+  grid-area: form;
+  padding: 1rem 1rem;
+  border-radius: 1.2rem;
+  border: solid 1px #d3cfc8;
+  background-color: #fbf9f7;
+}
+
+.contact__label {
+  padding-left: 1rem;
+  font-size: 1.4rem;
+  grid-area: tag;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__label.contact__label__content {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact__require-tag {
+  grid-area: require;
+  border-radius: 3px;
+  background-color: #d77358;
+  height: 1.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4.3rem;
+}
+
+.contact__tell {
+  font-size: 3.6rem;
+  font-family: "century-gothic-bold";
+  color: #fbf9f7;
+}
+
+.contact__tell__outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__tell__icon {
+  width: 4.5rem;
+  height: 3.7rem;
+  background-image: url(../img/tell-icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contact__tell__icon__outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1rem;
+}
+
+.contact__tell__title {
+  font-size: 1.45rem;
+  font-family: "m-plus-rounded-1c-regular";
+  color: #fbf9f7;
+}
+
+.contact__hours {
+  font-size: 1.4rem;
+  color: #fbf9f7;
+}
+
+.company {
+  border-collapse: separate;
+  border-radius: 26px;
+  border: solid 1px #d3cfc8;
+  background-color: #fbf9f7;
+  overflow: hidden;
+  border-spacing: 0;
+}
+
+.company__outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5.5rem;
+}
+
+.company__tag {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1.8rem 2.5rem 1.8rem 2.5rem;
+  width: 15.6rem;
+  height: auto;
+  vertical-align: middle;
+  border-bottom: 1px solid #d3cfc8;
+  border-right: 1px solid #d3cfc8;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #5e4331;
+  background-color: #e4ddd8;
+}
+
+.company__content {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1.8rem 2.5rem 1.8rem 2.5rem;
+  width: 47rem;
+  vertical-align: middle;
+  border-bottom: 1px solid #d3cfc8;
+  font-size: 1.4rem;
+  text-align: left;
+  color: #5e4331;
+}
+
+.company tr:last-child th,
+.company tr:last-child td {
+  border-bottom: none;
+}
 /*# sourceMappingURL=style.css.map */

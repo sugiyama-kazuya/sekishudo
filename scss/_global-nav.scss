@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import "_variable";
+@import "_function";
+@import "_mixin";
+
+.global-nav {
+  width: 89%;
+  height: 100%;
+  font-family: "m-plus-rounded-1c-regular";
+
+  &--track-icon:before {
+    content: "";
+    position: absolute;
+    left: -22px;
+    top: 3px;
+    background-image: url(../img/track-icon.png);
+    background-size: contain;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+  }
+
+  &--calendar-icon:before {
+    content: "";
+    position: absolute;
+    left: -22px;
+    top: 3px;
+    background-image: url(../img/kareder-icon.png);
+    background-size: contain;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+  }
+
+  &--menu-icon:before {
+    content: "";
+    position: absolute;
+    left: -22px;
+    top: 3px;
+    background-image: url(../img/burger-icon.png);
+    background-size: contain;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+  }
+
+  &__inner {
+    background-color: $base-bg-color;
+    border-bottom-right-radius: 50% 180%;
+    border-bottom-left-radius: 50% 180%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    font-size: 1.4rem;
+    letter-spacing: 0.03em;
+    &:not(:last-child) {
+      margin-right: 5.5rem;
+    }
+    &__link {
+      color: $text-white;
+      position: relative;
+    }
+  }
+}
+
+/***********************************
+* break-point-tablet 1110以下
+***********************************/
+
+@media (max-width: $tablet-window-size) {
+  .global-nav {
+    &.global-nav--hide {
+      visibility: hidden;
+    }
+  }
+}
+/***********************************
+* break-point-sp 767px以下
+***********************************/
+
+/***********************************
+* break-point-sp500 500px以下
+***********************************/

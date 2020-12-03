@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@import "_variable";
+
+.concept {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 9.1rem;
+
+  &__img {
+    border-radius: 39%;
+    width: convertVw(557, 1500);
+    height: convertVw(521, 1500);
+    object-fit: cover;
+  }
+
+  &__content-box {
+    width: 43.5%;
+    text-align: left;
+    padding: 4.6rem 0;
+  }
+
+  &__title {
+    font: {
+      size: convertVw(46, 1500);
+      family: "m-plus-rounded-1c-bold";
+    }
+    color: #5e4331;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    width: 130%;
+  }
+
+  &__text {
+    padding-top: 3.9rem;
+    font-size: convertVw(15, 1500);
+    color: $text-black;
+    line-height: 1.94;
+  }
+}
+
+/***********************************
+* break-point-tablet 1110以下
+***********************************/
+
+@media (max-width: $tablet-window-size) {
+  .concept {
+    justify-content: space-around;
+    padding-bottom: 0;
+    margin-top: convertVw(110, 1109);
+
+    &__img {
+      border-radius: 39%;
+      width: convertVw(417, 1109);
+      height: convertVw(390, 1109);
+      object-fit: cover;
+    }
+
+    &__title {
+      font: {
+        size: convertVw(30, 1109);
+      }
+      width: 120%;
+    }
+
+    &__content-box {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      width: 40%;
+      text-align: left;
+      justify-content: center;
+    }
+
+    &__text {
+      padding-top: convertVw(20, 1109);
+      font-size: convertVw(11, 1109);
+      color: $text-black;
+      line-height: 1.94;
+    }
+  }
+}

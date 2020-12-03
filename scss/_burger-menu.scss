@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import "_variable";
+
+@mixin burger-menu {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: "m-plus-rounded-1c-regular";
+  padding-top: 5.4rem;
+  box-sizing: border-box;
+}
+
+.burger-menu {
+  &__pc {
+    @include burger-menu;
+    background-color: $sub-bg-color;
+    color: #fff;
+    z-index: $z-index-s;
+    visibility: hidden;
+  }
+
+  &__sp {
+    @include burger-menu;
+    background-color: $sub-bg-color;
+    z-index: $z-index-sm;
+    visibility: hidden;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+    &__link {
+      color: $base-text-color;
+    }
+  }
+}

@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+.menu-list {
+  background-color: $menu-bg-color;
+  border-radius: convertVw(338, 1500);
+  margin-top: 4.5rem;
+  padding-bottom: 9rem;
+}
+
+.menu-list__upper-row {
+  padding-left: convertVw(195, 1500);
+  padding-right: convertVw(195, 1500);
+  padding-top: 9.5rem;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $menu-border-color;
+    box-sizing: border-box;
+  }
+
+  &__box {
+    width: calc(100% / 5);
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 36%;
+    margin-bottom: 7px;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    text-align: center;
+    color: $text-black;
+  }
+
+  &__price {
+    font-size: 1.6rem;
+    text-align: center;
+    color: $text-gray;
+    margin-bottom: 4rem;
+  }
+}
+
+.menu-list__lower-row {
+  padding-left: convertVw(195, 1500);
+  padding-right: convertVw(195, 1500);
+  margin-bottom: 2.5rem;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+    padding-top: 4.5rem;
+  }
+
+  &__box {
+    width: calc(100% / 5);
+    padding: 0 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+
+    &:not(:nth-child(5n)):after {
+      content: "";
+      position: absolute;
+      width: 31px;
+      height: 1px;
+      top: 37%;
+      right: -2%;
+      background-color: #5e4331;
+      transform: rotate(136deg);
+    }
+  }
+
+  &__title {
+    font-size: 1.55rem;
+    color: $text-black;
+    margin-bottom: 0.5rem;
+  }
+
+  &__price {
+    font-size: 1.35rem;
+    color: $text-gray;
+    margin-bottom: 2.5rem;
+  }
+}
+
+/***********************************
+* break-point-tablet 1110以下
+***********************************/
+
+@media (max-width: $tablet-window-size) {
+  .menu-list__upper-row {
+    padding-left: convertVw(110, 1109);
+    padding-right: convertVw(110, 1109);
+
+    &__box {
+      width: calc(100% / 4);
+    }
+
+    &__img {
+      margin-bottom: 1.5rem;
+    }
+
+    &__title {
+      font-size: convertVw(16, 1109);
+      text-align: center;
+      color: $text-black;
+    }
+
+    &__price {
+      font-size: convertVw(14, 1109);
+      color: $text-gray;
+      margin-bottom: 5rem;
+    }
+  }
+
+  .menu-list__lower-row {
+    padding-left: convertVw(110, 1109);
+    padding-right: convertVw(110, 1109);
+
+    &__box {
+      width: calc(100% / 4);
+
+      &:not(:nth-child(4n)):after {
+        content: "";
+        position: absolute;
+        width: 28px;
+        height: 1px;
+        top: 37%;
+        right: -2%;
+        background-color: #5e4331;
+        transform: rotate(136deg);
+      }
+    }
+
+    &__title {
+      font-size: convertVw(14, 1109);
+    }
+
+    &__price {
+      font-size: convertVw(12, 1109);
+    }
+  }
+}
+/***********************************
+* break-point-sp 767px以下
+***********************************/
+
+/***********************************
+* break-point-sp500 500px以下
+***********************************/

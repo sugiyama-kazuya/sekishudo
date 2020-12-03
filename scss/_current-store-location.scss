@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+.current-location {
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__upper-row {
+      display: flex;
+      margin-bottom: 7px;
+    }
+    &__lower-row {
+      display: flex;
+    }
+  }
+
+  &__item {
+    width: 11.7rem;
+    height: 2.7rem;
+    border-radius: 1.35rem;
+    background-color: $base-bg-color;
+    font-size: 1.5rem;
+    color: $text-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+  }
+
+  &__content {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1.4rem;
+    letter-spacing: 0.03em;
+
+    &:not(:last-child) {
+      padding-right: 3.4rem;
+    }
+  }
+}
+
+/***********************************
+* break-point-tablet 1110以下
+***********************************/
+
+@media (max-width: $tablet-window-size) {
+  .current-location {
+    &__box {
+      margin-top: convertVw(60, 1109);
+    }
+
+    &__item {
+      font-size: convertVw(13, 1109);
+      width: convertVw(110, 1109);
+      height: convertVw(27, 1109);
+      border-radius: convertVw(13, 1109);
+    }
+
+    &__content {
+      font-size: convertVw(13, 1109);
+      padding-left: convertVw(14, 1109);
+
+      &:not(:last-child) {
+        padding-right: convertVw(34, 1109);
+      }
+    }
+  }
+}
+/***********************************
+* break-point-sp 767px以下
+***********************************/
+
+/***********************************
+* break-point-sp500 500px以下
+***********************************/

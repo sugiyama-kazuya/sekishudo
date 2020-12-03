@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+.company {
+  &__outer {
+    display: flex;
+    justify-content: center;
+    margin-top: 5.5rem;
+  }
+  border-collapse: separate;
+  border-radius: 26px;
+  border: solid 1px #d3cfc8;
+  background-color: $company-content-color;
+  overflow: hidden;
+  border-spacing: 0;
+
+  &__tag {
+    box-sizing: border-box;
+    padding: 1.8rem 2.5rem 1.8rem 2.5rem;
+    width: 15.6rem;
+    height: auto;
+    vertical-align: middle;
+    border-bottom: 1px solid #d3cfc8;
+    border-right: 1px solid #d3cfc8;
+    font-size: 1.4rem;
+    text-align: left;
+    color: $base-text-color;
+    background-color: $company-tag-color;
+  }
+  &__content {
+    box-sizing: border-box;
+    padding: 1.8rem 2.5rem 1.8rem 2.5rem;
+    width: 47rem;
+    vertical-align: middle;
+    border-bottom: 1px solid #d3cfc8;
+    font-size: 1.4rem;
+    text-align: left;
+    color: $base-text-color;
+  }
+  tr {
+    &:last-child {
+      th,
+      td {
+        border-bottom: none;
+      }
+    }
+  }
+}

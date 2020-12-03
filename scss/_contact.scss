@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+%tag {
+  display: flex;
+  align-items: center;
+}
+
+%form {
+  padding: 0 0.5rem;
+  height: 4rem;
+  border-radius: 1.2rem;
+  border: solid 1px #d3cfc8;
+  background-color: $contact-text-color;
+}
+
+.contact {
+  margin-top: 4rem;
+  text-align: center;
+  padding-bottom: 7rem;
+
+  &__btn {
+    width: 23.7rem;
+    height: 5.5rem;
+    border-radius: 2.75rem;
+    background-color: #fbf9f7;
+    margin-top: 2rem;
+    font: {
+      size: 1.5rem;
+      family: "gloria-hallelujah";
+    }
+    color: $base-text-color;
+  }
+
+  &__form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: $contact-text-color;
+    grid-template:
+      "require tag form"
+      / 5.3rem 20.7rem 34.9rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    &__content {
+      align-items: flex-start;
+    }
+  }
+
+  &__name {
+    &__outer {
+      grid-area: form;
+      display: flex;
+    }
+
+    &__name {
+      width: 50%;
+      box-sizing: border-box;
+      margin-left: 1rem;
+      @extend %form;
+    }
+
+    &__surname {
+      width: 50%;
+      box-sizing: border-box;
+      @extend %form;
+    }
+  }
+
+  &__email {
+    grid-area: form;
+    @extend %form;
+  }
+
+  &__content {
+    grid-area: form;
+    padding: 1rem 1rem;
+    border-radius: 1.2rem;
+    border: solid 1px #d3cfc8;
+    background-color: $contact-text-color;
+  }
+
+  &__label {
+    padding-left: 1rem;
+    font-size: 1.4rem;
+    grid-area: tag;
+    display: flex;
+    align-items: center;
+    &.contact__label__content {
+      align-items: flex-start;
+    }
+  }
+
+  &__require-tag {
+    grid-area: require;
+    border-radius: 3px;
+    background-color: $contact-item-tag-color;
+    height: 1.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__information {
+    display: flex;
+    justify-content: center;
+    margin-top: 4.3rem;
+  }
+
+  &__tell {
+    font: {
+      size: 3.6rem;
+      family: "century-gothic-bold";
+    }
+    color: $contact-text-color;
+
+    &__outer {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__icon {
+      width: 4.5rem;
+      height: 3.7rem;
+      background-image: url(../img/tell-icon.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      &__outer {
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+      }
+    }
+
+    &__title {
+      font: {
+        size: 1.45rem;
+        family: "m-plus-rounded-1c-regular";
+      }
+      color: $contact-text-color;
+    }
+  }
+
+  &__hours {
+    font-size: 1.4rem;
+    color: $contact-text-color;
+  }
+}

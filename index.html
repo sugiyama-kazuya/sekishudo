@@ -1,16 +1,596 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="ページの内容を表す文章" />
-  <!-- reset css -->
-  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
-  <link rel="stylesheet" href="style.css">
-  <title></title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="ページの内容を表す文章" />
+    <!-- reset css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"
+    />
+    <!-- swiper -->
+    <link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="./style.css" />
+    <title></title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__inner__left">
+          <img src="./img/header-logo.png" class="header__logo" />
+        </div>
+        <div class="header__inner__right">
+          <!-- global-nav -->
+          <nav class="global-nav global-nav--hide">
+            <ul class="global-nav__inner">
+              <li class="global-nav__item">
+                <a href="" class="global-nav__item__link global-nav--track-icon">現在の出店場所</a>
+              </li>
+              <li class="global-nav__item">
+                <a href="" class="global-nav__item__link global-nav--calendar-icon">出店予定</a>
+              </li>
+              <li class="global-nav__item">
+                <a href="" class="global-nav__item__link global-nav--menu-icon">メニュー</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- end global-nav -->
+
+          <div class="header__burger-btn__outer">
+            <div class="header__burger-btn">
+              <div class="header__burger-btn__bars">
+                <span class="header__burger-btn__bar"></span>
+                <span class="header__burger-btn__bar"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- burger-menu -->
+    <!-- pc -->
+    <div class="burger-menu__pc">
+      <ul class="burger-menu__list">
+        <li class="burger-menu__item">
+          <a href="" class="burger-menu__item__link">TOP</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="" class="burger-menu__item__link">コンセプト</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="" class="burger-menu__item__link">今後の出店予定</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="" class="burger-menu__item__link">お知らせ・ブログ</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="" class="burger-menu__item__link">これまでの出展場所</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="" class="burger-menu__item__link">お問合せ</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="" class="burger-menu__item__link">会社概要</a>
+        </li>
+      </ul>
+    </div>
+    <!-- end pc -->
+
+    <!-- sp and tablet-->
+    <div class="burger-menu__sp">
+      <ul class="burger-menu__list">
+        <li class="burger-menu__item">
+          <a href="" class="burger-menu__item__link">TOP</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="" class="burger-menu__item__link">コンセプト</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="" class="burger-menu__item__link">現在の出店場所</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="" class="burger-menu__item__link">今後の出店予定</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="" class="burger-menu__item__link">お知らせ・ブログ</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="" class="burger-menu__item__link">これまでの出展場所</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="" class="burger-menu__item__link">メニュー</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="" class="burger-menu__item__link">お問合せ</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="" class="burger-menu__item__link">会社概要</a>
+        </li>
+      </ul>
+    </div>
+    <!-- end sp and tablet -->
+    <!--end burger-menu -->
+
+    <!-- fv -->
+    <div class="fv">
+      <div class="fv__logo__outer">
+        <img
+          src="./img/kv-logo.png"
+          width="108"
+          height="394"
+          class="fv__logo"
+        />
+      </div>
+      <div class="fv__img">
+        <div class="fv__title__box">
+          <h1 class="fv__title">これはダミーテキストです</h1>
+          <h1 class="fv__title">実際にはキャチコピーが入ります</h1>
+        </div>
+      </div>
+    </div>
+    <!-- end fv -->
+
+    <!-- social-btn -->
+    <div class="social-btn">
+      <a href="" class="social-btn__line"></a
+      ><a href="" class="social-btn__instagram"></a>
+    </div>
+    <!-- end social-btn -->
+
+    <!-- concept -->
+    <section class="section section__concept">
+      <div class="concept">
+        <img
+          src="./img/concept.jpg"
+          width="557"
+          height="521"
+          alt=""
+          class="concept__img"
+        />
+        <div class="concept__content-box">
+          <h2 class="concept__title">
+            実際にコンセプト等のキャッチコピーが入ります
+          </h2>
+          <p class="concept__text">
+            これはダミーテキストです。実際にはコンセプト・魅力の内容が入ります。これはダミーテキストです。実際にはコンセプト・魅力の内容が入ります。これはダミーテキストです。実際にはコンセプト・魅力の内容が入ります。これはダミーテキストです。実際にはコンセプト・魅力の内容が入ります。これはダミーテキストです。実際にはコンセプト・魅力の内容が入ります。
+            これはダミーテキストです。実際にはコンセプト・魅力の内容が入ります。これはダミーテキストです。実際にはコンセプト・魅力の内容が入ります。
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- end concept -->
+
+    <!-- current-store-location -->
+    <section class="section section__current-store-location">
+      <div class="section__title__outer">
+        <span class="section__title-en section__title-en--current"
+          >Current store location</span
+        >
+        <h2 class="section__title-ja">現在の出店場所</h2>
+      </div>
+      <dl class="current-location__box">
+        <div class="current-locarion__box__inner">
+          <div class="current-location__box__upper-row">
+            <dt class="current-location__item">場所</dt>
+            <dd class="current-location__content">
+              〒540-0002 大阪府大阪市中央区大阪城１−１
+            </dd>
+          </div>
+          <div class="current-location__box__lower-row">
+            <dt class="current-location__item">営業時間</dt>
+            <dd class="current-location__content">9:00-18:00</dd>
+            <dt class="current-location__item">期間</dt>
+            <dd class="current-location__content">2020/11/01-2020/12/30</dd>
+            <dt class="current-location__item">TEL</dt>
+            <dd class="current-location__content">090-0000-0000</dd>
+          </div>
+        </div>
+      </dl>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.7661603987303!2d135.52442891517725!3d34.68585079152119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0cd6ae00743%3A0xd3a0f38680973a56!2z44CSNTQwLTAwMDIg5aSn6Ziq5bqc5aSn6Ziq5biC5Lit5aSu5Yy65aSn6Ziq5Z-O77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1606888105958!5m2!1sja!2sjp"
+        width="100%"
+        height="521"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+        class="site-map"
+      ></iframe>
+    </section>
+    <!-- end current-store-location -->
+
+    <!-- news -->
+    <section class="section section__news">
+      <div class="section__title__outer">
+        <span class="section__title-en section__title-en--news">News</span>
+        <h2 class="section__title-ja">お知らせ・ブログ</h2>
+      </div>
+      <div class="news">
+        <article class="news__box">
+          <img src="./img/news-1.jpg" alt="" class="news__img" />
+          <span class="news__date">2020/12/15</span>
+          <h3 class="news__title">
+            お知らせのタイトルが入りますお知らせのタイトルが入ります
+          </h3>
+        </article>
+        <article class="news__box">
+          <img src="./img/news-2.jpg" alt="" class="news__img" />
+          <span class="news__date">2020/12/15</span>
+          <h3 class="news__title">
+            お知らせのタイトルが入りますお知らせのタイトルが入ります
+          </h3>
+        </article>
+        <article class="news__box">
+          <img src="./img/news-3.jpg" alt="" class="news__img" />
+          <span class="news__date">2020/12/15</span>
+          <h3 class="news__title">
+            お知らせのタイトルが入りますお知らせのタイトルが入ります
+          </h3>
+        </article>
+        <article class="news__box">
+          <img src="./img/news-2.jpg" alt="" class="news__img" />
+          <span class="news__date">2020/12/15</span>
+          <h3 class="news__title">
+            お知らせのタイトルが入りますお知らせのタイトルが入ります
+          </h3>
+        </article>
+      </div>
+      <div class="global-btn__outer">
+        <a href="#" class="global-btn">VIEW MORE</a>
+      </div>
+    </section>
+    <!-- end news -->
+
+    <!-- menu-list -->
+    <section class="section section__menu-list">
+      <div class="section__title__outer">
+        <span class="section__title-en section__title-en--menu-list">Menu</span>
+        <h2 class="section__title-ja">商品一覧</h2>
+      </div>
+      <div class="menu-list">
+        <div class="menu-list__upper-row">
+          <ul class="menu-list__upper-row__inner">
+            <li class="menu-list__upper-row__box">
+              <img
+                src="./img/menu-2.jpg"
+                alt=""
+                class="menu-list__upper-row__img"
+              />
+              <h3 class="menu-list__upper-row__title">商品名が入ります商品</h3>
+              <p class="menu-list__upper-row__price">680円</p>
+            </li>
+            <li class="menu-list__upper-row__box">
+              <img
+                src="./img/menu-3.jpg"
+                alt=""
+                class="menu-list__upper-row__img"
+              />
+              <h3 class="menu-list__upper-row__title">商品名が入ります商品</h3>
+              <p class="menu-list__upper-row__price">680円</p>
+            </li>
+            <li class="menu-list__upper-row__box">
+              <img
+                src="./img/menu-4.jpg"
+                alt=""
+                class="menu-list__upper-row__img"
+              />
+              <h3 class="menu-list__upper-row__title">商品名が入ります商品</h3>
+              <p class="menu-list__upper-row__price">680円</p>
+            </li>
+            <li class="menu-list__upper-row__box">
+              <img
+                src="./img/menu-5.jpg"
+                alt=""
+                class="menu-list__upper-row__img"
+              />
+              <h3 class="menu-list__upper-row__title">商品名が入ります商品</h3>
+              <p class="menu-list__upper-row__price">680円</p>
+            </li>
+            <li class="menu-list__upper-row__box">
+              <img
+                src="./img/menu-6.jpg"
+                alt=""
+                class="menu-list__upper-row__img"
+              />
+              <h3 class="menu-list__upper-row__title">商品名が入ります商品</h3>
+              <p class="menu-list__upper-row__price">680円</p>
+            </li>
+            <li class="menu-list__upper-row__box">
+              <img
+                src="./img/menu-7.jpg"
+                alt=""
+                class="menu-list__upper-row__img"
+              />
+              <h3 class="menu-list__upper-row__title">商品名が入ります商品</h3>
+              <p class="menu-list__upper-row__price">680円</p>
+            </li>
+            <li class="menu-list__upper-row__box">
+              <img
+                src="./img/menu-8.jpg"
+                alt=""
+                class="menu-list__upper-row__img"
+              />
+              <h3 class="menu-list__upper-row__title">商品名が入ります商品</h3>
+              <p class="menu-list__upper-row__price">680円</p>
+            </li>
+            <li class="menu-list__upper-row__box">
+              <img
+                src="./img/menu-9.jpg"
+                alt=""
+                class="menu-list__upper-row__img"
+              />
+              <h3 class="menu-list__upper-row__title">商品名が入ります商品</h3>
+              <p class="menu-list__upper-row__price">680円</p>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-list__lower-row">
+          <ul class="menu-list__lower-row__inner">
+            <li class="menu-list__lower-row__box">
+              <h3 class="menu-list__lower-row__title">商品名が入ります</h3>
+              <p class="menu-list__lower-row__price">680円</p>
+            </li>
+            <li class="menu-list__lower-row__box">
+              <h3 class="menu-list__lower-row__title">商品名が入ります</h3>
+              <p class="menu-list__lower-row__price">680円</p>
+            </li>
+            <li class="menu-list__lower-row__box">
+              <h3 class="menu-list__lower-row__title">商品名が入ります</h3>
+              <p class="menu-list__lower-row__price">680円</p>
+            </li>
+            <li class="menu-list__lower-row__box">
+              <h3 class="menu-list__lower-row__title">商品名が入ります</h3>
+              <p class="menu-list__lower-row__price">680円</p>
+            </li>
+            <li class="menu-list__lower-row__box">
+              <h3 class="menu-list__lower-row__title">商品名が入ります</h3>
+              <p class="menu-list__lower-row__price">680円</p>
+            </li>
+            <li class="menu-list__lower-row__box">
+              <h3 class="menu-list__lower-row__title">商品名が入ります</h3>
+              <p class="menu-list__lower-row__price">680円</p>
+            </li>
+            <li class="menu-list__lower-row__box">
+              <h3 class="menu-list__lower-row__title">商品名が入ります</h3>
+              <p class="menu-list__lower-row__price">680円</p>
+            </li>
+            <li class="menu-list__lower-row__box">
+              <h3 class="menu-list__lower-row__title">商品名が入ります</h3>
+              <p class="menu-list__lower-row__price">680円</p>
+            </li>
+            <li class="menu-list__lower-row__box">
+              <h3 class="menu-list__lower-row__title">商品名が入ります</h3>
+              <p class="menu-list__lower-row__price">680円</p>
+            </li>
+            <li class="menu-list__lower-row__box">
+              <h3 class="menu-list__lower-row__title">商品名が入ります</h3>
+              <p class="menu-list__lower-row__price">680円</p>
+            </li>
+            <li class="menu-list__lower-row__box">
+              <h3 class="menu-list__lower-row__title">商品名が入ります</h3>
+              <p class="menu-list__lower-row__price">680円</p>
+            </li>
+            <li class="menu-list__lower-row__box">
+              <h3 class="menu-list__lower-row__title">商品名が入ります</h3>
+              <p class="menu-list__lower-row__price">680円</p>
+            </li>
+          </ul>
+        </div>
+        <div class="global-btn__outer">
+          <a href="#" class="global-btn">VIEW MORE</a>
+        </div>
+      </div>
+    </section>
+    <!-- end menu-list -->
+
+    <!-- post-store-location -->
+    <section class="section section__post-location">
+      <div class="section__title__outer">
+        <span class="section__title-en section__title-en--post-location"
+          >Past store openings</span
+        >
+        <h2 class="section__title-ja">これまでの出店場所</h2>
+      </div>
+      <ul class="post-location">
+        <li class="post-location__box">
+          <img
+            src="./img/store-opening-location-1.jpg"
+            alt=""
+            class="post-location__img"
+          />
+          <div class="post-location__content-wrapper">
+            <span class="post-location__date">2020/12/15</span>
+            <h3 class="post-location__title">
+              実施例のタイトルが入ります実施例のタイトルが入ります
+            </h3>
+            <p class="post-location__text">
+              記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
+            </p>
+          </div>
+        </li>
+        <li class="post-location__box">
+          <img
+            src="./img/store-opening-location-2.jpg"
+            alt=""
+            class="post-location__img"
+          />
+          <div class="post-location__content-wrapper">
+            <span class="post-location__date">2020/12/15</span>
+            <h3 class="post-location__title">
+              実施例のタイトルが入ります実施例のタイトルが入ります
+            </h3>
+            <p class="post-location__text">
+              記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
+            </p>
+          </div>
+        </li>
+        <li class="post-location__box">
+          <img
+            src="./img/store-opening-location-3.jpg"
+            alt=""
+            class="post-location__img"
+          />
+          <div class="post-location__content-wrapper">
+            <span class="post-location__date">2020/12/15</span>
+            <h3 class="post-location__title">
+              実施例のタイトルが入ります実施例のタイトルが入ります
+            </h3>
+            <p class="post-location__text">
+              記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
+            </p>
+          </div>
+        </li>
+        <li class="post-location__box">
+          <img
+            src="./img/store-opening-location-2.jpg"
+            alt=""
+            class="post-location__img"
+          />
+          <div class="post-location__content-wrapper">
+            <span class="post-location__date">2020/12/15</span>
+            <h3 class="post-location__title">
+              実施例のタイトルが入ります実施例のタイトルが入ります
+            </h3>
+            <p class="post-location__text">
+              記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
+            </p>
+          </div>
+        </li>
+      </ul>
+      <div class="global-btn__outer">
+        <a href="#" class="global-btn">VIEW MORE</a>
+      </div>
+    </section>
+    <!-- end post-store-location -->
+
+    <!-- contact -->
+    <section class="section section__contact">
+      <div class="section__title__outer">
+        <span class="section__title-en section__title-en--contact"
+          >Contact</span
+        >
+        <h2 class="section__title-ja section__title-ja--white">お問い合わせ</h2>
+      </div>
+      <div class="contact__information">
+        <div class="contact__tell__icon__outer">
+          <span class="contact__tell__icon"></span>
+        </div>
+        <div class="contact__tell__outer">
+          <h3 class="contact__tell__title">お電話でのお問い合わせ</h3>
+          <p class="contact__tell">080-0000-0000</p>
+          <p class="contact__hours">0:00～00:00（◯◯休み）</p>
+        </div>
+      </div>
+
+      <form action="post" class="contact">
+        <div class="contact__form">
+          <div class="contact__require-tag">
+            <span class="contact__require-tag">必須</span>
+          </div>
+          <label for="name" class="contact__label">氏名</label>
+          <div class="contact__name__outer">
+            <input type="text" class="contact__name__surname" />
+            <input type="text" class="contact__name__name" />
+          </div>
+        </div>
+
+        <div class="contact__form">
+          <label
+            for="name-furigana"
+            class="contact__label contact__label--no-require"
+            >氏名（フリガナ）</label
+          >
+          <div class="contact__name__outer">
+            <input type="text" class="contact__name__surname" />
+            <input type="text" class="contact__name__name" />
+          </div>
+        </div>
+
+        <div class="contact__form">
+          <div class="contact__require-tag">
+            <span class="contact__require-tag">必須</span>
+          </div>
+          <label for="email" class="contact__label">Eメールアドレス</label>
+          <input type="email" class="contact__email" />
+        </div>
+
+        <div class="contact__form">
+          <div class="contact__require-tag">
+            <span class="contact__require-tag">必須</span>
+          </div>
+          <label for="re-email" class="contact__label"
+            >Eメールアドレス（再入力）</label
+          >
+          <input type="email" class="contact__email" />
+        </div>
+
+        <div class="contact__form contact__form__content">
+          <div class="contact__require-tag">
+            <span class="contact__require-tag">必須</span>
+          </div>
+          <label for="content" class="contact__label contact__label__content"
+            >内容</label
+          >
+          <textarea class="contact__content" cols="30" rows="14"></textarea>
+        </div>
+
+        <button type="submit" class="contact__btn">CONTACT</button>
+      </form>
+    </section>
+    <!-- end contact -->
+
+    <!-- company -->
+    <section class="section section__company">
+      <div class="section__inner">
+        <div class="section__title__outer">
+          <span class="section__title-en">Company</span>
+          <h2 class="section__title-ja">会社概要</h2>
+        </div>
+
+        <div class="company__outer">
+          <table class="company">
+            <tr>
+              <th class="company__tag">会社名</th>
+              <td class="company__content">石井企画</td>
+            </tr>
+            <tr>
+              <th class="company__tag">電話番号</th>
+              <td class="company__content"></td>
+            </tr>
+            <tr>
+              <th class="company__tag">FAX</th>
+              <td class="company__content"></td>
+            </tr>
+            <tr>
+              <th class="company__tag">所在地</th>
+              <td class="company__content"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- end company -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <img src="./img/footer-logo.png" class="footer__logo" />
+        <div class="footer__copy-right">© Sekishu-do All Rights Reserved.</div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- swiper -->
+    <script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
 </html>
