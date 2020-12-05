@@ -15,6 +15,7 @@
     &__upper-row {
       display: flex;
       margin-bottom: 7px;
+      align-items: center;
     }
     &__lower-row {
       display: flex;
@@ -32,6 +33,11 @@
     align-items: center;
     justify-content: center;
     letter-spacing: 0.03em;
+
+    &__outer {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__content {
@@ -41,10 +47,7 @@
     justify-content: center;
     padding-left: 1.4rem;
     letter-spacing: 0.03em;
-
-    &:not(:last-child) {
-      padding-right: 3.4rem;
-    }
+    padding-right: convertVw(34, 1109);
   }
 }
 
@@ -55,7 +58,7 @@
 @media (max-width: $tablet-window-size) {
   .current-location {
     &__box {
-      margin-top: convertVw(60, 1109);
+      margin-top: 5rem;
     }
 
     &__item {
@@ -68,10 +71,7 @@
     &__content {
       font-size: convertVw(13, 1109);
       padding-left: convertVw(14, 1109);
-
-      &:not(:last-child) {
-        padding-right: convertVw(34, 1109);
-      }
+      padding-right: convertVw(14, 1109);
     }
   }
 }
@@ -79,6 +79,58 @@
 * break-point-sp 767px以下
 ***********************************/
 
+@media (max-width: $sp-window-size) {
+  .current-location {
+    &__box {
+      margin-top: 2rem;
+
+      &__lower-row {
+        flex-direction: column;
+      }
+    }
+
+    &__item {
+      font-size: 1.1rem;
+      width: 9rem;
+      height: 2.5rem;
+      border-radius: 1.3rem;
+
+      &__outer {
+        margin-bottom: 8px;
+      }
+    }
+
+    &__content {
+      font-size: 1.3rem;
+      padding-left: 1.3rem;
+    }
+  }
+}
+
 /***********************************
 * break-point-sp500 500px以下
 ***********************************/
+
+@media (max-width: $sp500-window-size) {
+  .current-location {
+    &__item {
+      font-size: 9px;
+      width: 20%;
+      height: 2rem;
+      line-height: 2rem;
+      border-radius: 1.3rem;
+
+      &__outer {
+        margin-bottom: 8px;
+      }
+    }
+
+    &__content {
+      width: 80%;
+      font-size: 1.3rem;
+      padding-left: 1rem;
+      justify-content: flex-start;
+      box-sizing: border-box;
+    }
+  }
+}

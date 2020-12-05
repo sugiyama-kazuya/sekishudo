@@ -22,10 +22,52 @@
     letter-spacing: 0.11em;
   }
 }
-/***********************************
-* break-point-tablet
-***********************************/
 
 /***********************************
-* break-point-sp
+* break-point-tablet 1110以下
 ***********************************/
+
+@media (max-width: $tablet-window-size) {
+  .footer {
+    padding-right: convertVw(140, 1109);
+    padding-left: convertVw(140, 1109);
+    padding-bottom: 2.5rem;
+  }
+}
+/***********************************
+* break-point-sp 767px以下
+***********************************/
+
+@media (max-width: $sp-window-size) {
+  .footer {
+    padding-left: convertVw(40, 767);
+    padding-right: convertVw(40, 767);
+    padding-bottom: 1.5rem;
+
+    &__logo {
+      object-fit: contain;
+      margin-bottom: 1rem;
+      width: 9rem;
+    }
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__copy-right {
+      font-size: 1rem;
+    }
+  }
+}
+
+/***********************************
+* break-point-sp500 500px以下
+***********************************/
+
+@media (max-width: $sp500-window-size) {
+  .footer {
+  }
+}

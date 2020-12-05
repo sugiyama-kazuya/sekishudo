@@ -15,27 +15,27 @@
 // family
 @font-face {
   font-family: "m-plus-rounded-1c-regular";
-  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+  src: url("./fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "m-plus-rounded-1c-bold";
-  src: url("../fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+  src: url("./fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "sourcehansans-jp-regular";
-  src: url("../fonts/SourceHanSans-Regular.otf") format("opentype");
+  src: url("./fonts/SourceHanSans-Regular.otf") format("opentype");
 }
 @font-face {
   font-family: "gloria-hallelujah";
-  src: url("../fonts/GloriaHallelujah-Regular.ttf") format("truetype");
+  src: url("./fonts/GloriaHallelujah-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "century-gothic";
-  src: url("../fonts/CenturyGothic.ttf") format("truetype");
+  src: url("./fonts/CenturyGothic.ttf") format("truetype");
 }
 @font-face {
   font-family: "century-gothic-bold";
-  src: url("../fonts/GOTHICB0.TTF") format("truetype");
+  src: url("./fonts/GOTHICB0.TTF") format("truetype");
 }
 
 /***********************************
@@ -85,3 +85,27 @@ $z-index-l: 40;
 $z-index-ll: 50;
 $z-index-3l: 60;
 $z-index-xl: 70;
+$z-index-xx: 80;
+
+/***********************************
+* animation
+***********************************/
+
+
+@keyframes popup {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popdown {
+  0% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

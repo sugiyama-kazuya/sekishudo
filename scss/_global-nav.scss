@@ -13,7 +13,7 @@
     position: absolute;
     left: -22px;
     top: 3px;
-    background-image: url(../img/track-icon.png);
+    background-image: url(./img/track-icon.png);
     background-size: contain;
     width: 1.5rem;
     height: 1.5rem;
@@ -25,7 +25,7 @@
     position: absolute;
     left: -22px;
     top: 3px;
-    background-image: url(../img/kareder-icon.png);
+    background-image: url(./img/kareder-icon.png);
     background-size: contain;
     width: 1.5rem;
     height: 1.5rem;
@@ -37,7 +37,7 @@
     position: absolute;
     left: -22px;
     top: 3px;
-    background-image: url(../img/burger-icon.png);
+    background-image: url(./img/burger-icon.png);
     background-size: contain;
     width: 1.5rem;
     height: 1.5rem;
@@ -67,7 +67,6 @@
     }
   }
 }
-
 /***********************************
 * break-point-tablet 1110以下
 ***********************************/

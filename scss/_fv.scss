@@ -1,30 +1,62 @@
 @charset "UTF-8";
 @import "_variable";
 
+.swiper {
+  &-container {
+    width: 80%;
+    margin-right: 0;
+    margin-left: 0;
+    border-radius: 27% 25% 27% 27% / 35% 36% 34% 37%;
+  }
+
+  &-pagination {
+    bottom: -6%;
+    right: 39%;
+
+    &-bullet {
+      margin-right: 1rem;
+      width: 1.1rem;
+      height: 1.1rem;
+      border-radius: 3px;
+
+      &-active {
+        background-color: $base-text-color;
+      }
+    }
+  }
+}
+
 .fv {
   display: flex;
   justify-content: space-between;
-  margin-top: 3.5rem;
+  margin-top: 8.9rem;
   padding-right: convertVw(196, 1500);
   padding-left: convertVw(217, 1500);
+  position: relative;
+
+  // ドロワーメニューが開いた際に追加されるclass
+  // ヘッダーの高さ分を追加
+  &.js-nav-menu-active {
+    margin-top: 8.9rem;
+  }
 
   &__logo {
     position: absolute;
     top: 10%;
+    object-fit: contain;
+
     &__outer {
       position: relative;
       width: 10%;
     }
-    object-fit: contain;
   }
+
   &__img {
-    width: 79%;
+    object-fit: cover;
+    width: 100%;
     position: relative;
-    background-image: url(../img/kv.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 56rem;
-    border-radius: 20.7rem;
+
     &__outer {
       display: flex;
       justify-content: flex-end;
@@ -42,9 +74,10 @@
 
     &__box {
       position: absolute;
-      top: 72%;
-      left: -9%;
+      top: 73%;
+      left: 25%;
       text-align: left;
+      z-index: $z-index-s;
     }
   }
 }
@@ -55,7 +88,7 @@
 
 @media (max-width: $tablet-window-size) {
   .fv {
-    padding-left: convertVw(100, 1109);
+    padding-left: convertVw(70, 1109);
     padding-right: convertVw(100, 1109);
 
     &__logo {
@@ -64,13 +97,26 @@
     }
 
     &__img {
-      width: convertVw(718, 1109);
+      width: convertVw(740, 1109);
       height: convertVw(560, 1109);
       border-radius: convertVw(207, 1109);
     }
 
     &__title {
-      font-size: convertVw(25, 1109);
+      font-size: convertVw(27, 1109);
+    }
+  }
+
+  .swiper {
+    &-pagination {
+      right: 41%;
+    }
+
+    &-pagination-bullet {
+      margin-right: 11px;
+      width: 9px;
+      height: 9px;
+      border-radius: 2px;
     }
   }
 }
@@ -78,6 +124,59 @@
 * break-point-sp 767px以下
 ***********************************/
 
+@media (max-width: $sp-window-size) {
+  .fv {
+    padding-left: convertVw(40, 767);
+    padding-right: convertVw(80, 767);
+
+    &__title {
+      font-size: convertVw(23, 767);
+    }
+  }
+
+  .swiper {
+    &-pagination {
+      right: 41%;
+      bottom: -8%;
+    }
+
+    &-pagination-bullet {
+      margin-right: 7px;
+      width: 7px;
+      height: 7px;
+      border-radius: 2px;
+    }
+  }
+}
+
 /***********************************
 * break-point-sp500 500px以下
 ***********************************/
+
+@media (max-width: $sp500-window-size) {
+  .fv {
+    margin-top: 2.5rem;
+    padding-left: convertVw(20, 500);
+    padding-right: convertVw(60, 500);
+
+    &__title {
+      font-size: convertVw(13, 500);
+      &:first-child {
+        margin-bottom: -1rem;
+      }
+    }
+  }
+
+  .swiper {
+    &-pagination {
+      bottom: -11%;
+    }
+
+    &-pagination-bullet {
+      margin-right: 8px;
+      width: 7px;
+      height: 7px;
+      border-radius: 2px;
+    }
+  }
+}

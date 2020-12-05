@@ -19,23 +19,47 @@
   </head>
   <body>
     <!-- header -->
-    <header class="header">
+
+    <header id="js-header" class="header">
       <div class="header__inner">
         <div class="header__inner__left">
-          <img src="./img/header-logo.png" class="header__logo" />
+          <a id="js-nav-menu-target" href="#top" class="header__img__outer">
+            <img
+              src="./img/header-logo.png"
+              class="header__logo"
+              alt=""
+              width="147"
+              height="37"
+            />
+          </a>
         </div>
         <div class="header__inner__right">
           <!-- global-nav -->
           <nav class="global-nav global-nav--hide">
             <ul class="global-nav__inner">
               <li class="global-nav__item">
-                <a href="" class="global-nav__item__link global-nav--track-icon">現在の出店場所</a>
+                <a
+                  id="js-nav-menu-target"
+                  href="#current-location"
+                  class="global-nav__item__link global-nav--track-icon"
+                  >現在の出店場所</a
+                >
               </li>
               <li class="global-nav__item">
-                <a href="" class="global-nav__item__link global-nav--calendar-icon">出店予定</a>
+                <a
+                  href=""
+                  class="global-nav__item__link global-nav--calendar-icon"
+                  >出店予定</a
+                >
               </li>
               <li class="global-nav__item">
-                <a href="" class="global-nav__item__link global-nav--menu-icon">メニュー</a>
+                <a
+                  data-scroll
+                  id="js-nav-menu-target"
+                  href="#menu"
+                  class="global-nav__item__link global-nav--menu-icon"
+                  >メニュー</a
+                >
               </li>
             </ul>
           </nav>
@@ -43,7 +67,7 @@
 
           <div class="header__burger-btn__outer">
             <div class="header__burger-btn">
-              <div class="header__burger-btn__bars">
+              <div id="js-burger-btn" class="header__burger-btn__bars">
                 <span class="header__burger-btn__bar"></span>
                 <span class="header__burger-btn__bar"></span>
               </div>
@@ -56,62 +80,136 @@
 
     <!-- burger-menu -->
     <!-- pc -->
-    <div class="burger-menu__pc">
+    <div id="js-nav-menu-pc" class="burger-menu__pc">
       <ul class="burger-menu__list">
         <li class="burger-menu__item">
-          <a href="" class="burger-menu__item__link">TOP</a>
+          <a
+            id="js-nav-menu-target"
+            href="#header"
+            class="burger-menu__item__link"
+            >TOP</a
+          >
         </li>
         <li class="burger-menu__item">
-          <a href="" class="burger-menu__item__link">コンセプト</a>
+          <a
+            id="js-nav-menu-target"
+            href="#concept"
+            class="burger-menu__item__link"
+            >コンセプト</a
+          >
         </li>
         <li class="burger-menu__item">
-          <a href="" class="burger-menu__item__link">今後の出店予定</a>
+          <a id="js-nav-menu-target" href="#" class="burger-menu__item__link"
+            >今後の出店予定</a
+          >
         </li>
         <li class="burger-menu__item">
-          <a href="" class="burger-menu__item__link">お知らせ・ブログ</a>
+          <a
+            id="js-nav-menu-target"
+            href="#news"
+            class="burger-menu__item__link"
+            >お知らせ・ブログ</a
+          >
         </li>
         <li class="burger-menu__item">
-          <a href="" class="burger-menu__item__link">これまでの出展場所</a>
+          <a
+            id="js-nav-menu-target"
+            href="#post-location"
+            class="burger-menu__item__link"
+            >これまでの出展場所</a
+          >
         </li>
         <li class="burger-menu__item">
-          <a href="" class="burger-menu__item__link">お問合せ</a>
+          <a
+            id="js-nav-menu-target"
+            href="#contact"
+            class="burger-menu__item__link"
+            >お問合せ</a
+          >
         </li>
         <li class="burger-menu__item">
-          <a href="" class="burger-menu__item__link">会社概要</a>
+          <a
+            id="js-nav-menu-target"
+            href="#company"
+            class="burger-menu__item__link"
+            >会社概要</a
+          >
         </li>
       </ul>
     </div>
     <!-- end pc -->
 
     <!-- sp and tablet-->
-    <div class="burger-menu__sp">
+    <div id="js-nav-menu-tablet-sp" class="burger-menu__sp">
       <ul class="burger-menu__list">
         <li class="burger-menu__item">
-          <a href="" class="burger-menu__item__link">TOP</a>
+          <a
+            id="js-nav-menu-target"
+            href="#header"
+            class="burger-menu__item__link"
+            >TOP</a
+          >
         </li>
         <li class="burger-menu__item">
-          <a href="" class="burger-menu__item__link">コンセプト</a>
+          <a
+            id="js-nav-menu-target"
+            href="#concept"
+            class="burger-menu__item__link"
+            >コンセプト</a
+          >
         </li>
         <li class="burger-menu__item">
-          <a href="" class="burger-menu__item__link">現在の出店場所</a>
+          <a
+            id="js-nav-menu-target"
+            href="#current-location"
+            class="burger-menu__item__link"
+            >現在の出店場所</a
+          >
         </li>
         <li class="burger-menu__item">
-          <a href="" class="burger-menu__item__link">今後の出店予定</a>
+          <a id="js-nav-menu-target" href="#" class="burger-menu__item__link"
+            >今後の出店予定</a
+          >
         </li>
         <li class="burger-menu__item">
-          <a href="" class="burger-menu__item__link">お知らせ・ブログ</a>
+          <a
+            id="js-nav-menu-target"
+            href="#news"
+            class="burger-menu__item__link"
+            >お知らせ・ブログ</a
+          >
         </li>
         <li class="burger-menu__item">
-          <a href="" class="burger-menu__item__link">これまでの出展場所</a>
+          <a
+            id="js-nav-menu-target"
+            href="#post-location"
+            class="burger-menu__item__link"
+            >これまでの出店場所</a
+          >
         </li>
         <li class="burger-menu__item">
-          <a href="" class="burger-menu__item__link">メニュー</a>
+          <a
+            id="js-nav-menu-target"
+            href="#menu"
+            class="burger-menu__item__link"
+            >メニュー</a
+          >
         </li>
         <li class="burger-menu__item">
-          <a href="" class="burger-menu__item__link">お問合せ</a>
+          <a
+            id="js-nav-menu-target"
+            href="#contact"
+            class="burger-menu__item__link"
+            >お問合せ</a
+          >
         </li>
         <li class="burger-menu__item">
-          <a href="" class="burger-menu__item__link">会社概要</a>
+          <a
+            id="js-nav-menu-target"
+            href="#company"
+            class="burger-menu__item__link"
+            >会社概要</a
+          >
         </li>
       </ul>
     </div>
@@ -119,33 +217,46 @@
     <!--end burger-menu -->
 
     <!-- fv -->
-    <div class="fv">
+    <div id="js-fv" class="fv">
       <div class="fv__logo__outer">
         <img
           src="./img/kv-logo.png"
+          class="fv__logo"
           width="108"
           height="394"
-          class="fv__logo"
+          alt=""
         />
       </div>
-      <div class="fv__img">
-        <div class="fv__title__box">
-          <h1 class="fv__title">これはダミーテキストです</h1>
-          <h1 class="fv__title">実際にはキャチコピーが入ります</h1>
+      <!-- <div class="fv__img__outer"> -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="fv__img" src="./img/kv.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="fv__img" src="./img/kv.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="fv__img" src="./img/kv.jpg" alt="" />
+          </div>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
+      <div class="fv__title__box">
+        <h1 class="fv__title">これはダミーテキストです</h1>
+        <h1 class="fv__title">実際にはキャチコピーが入ります</h1>
+      </div>
+      <!-- social-btn -->
+      <div class="social-btn">
+        <a href="#" class="social-btn__line"><span></span></a
+        ><a href="#" class="social-btn__instagram"><span></span></a>
+      </div>
+      <!-- end social-btn -->
     </div>
     <!-- end fv -->
 
-    <!-- social-btn -->
-    <div class="social-btn">
-      <a href="" class="social-btn__line"></a
-      ><a href="" class="social-btn__instagram"></a>
-    </div>
-    <!-- end social-btn -->
-
     <!-- concept -->
-    <section class="section section__concept">
+    <section id="js-concept" class="section section__concept">
       <div class="concept">
         <img
           src="./img/concept.jpg"
@@ -168,7 +279,10 @@
     <!-- end concept -->
 
     <!-- current-store-location -->
-    <section class="section section__current-store-location">
+    <section
+      id="js-current-location"
+      class="section section__current-store-location"
+    >
       <div class="section__title__outer">
         <span class="section__title-en section__title-en--current"
           >Current store location</span
@@ -184,12 +298,18 @@
             </dd>
           </div>
           <div class="current-location__box__lower-row">
-            <dt class="current-location__item">営業時間</dt>
-            <dd class="current-location__content">9:00-18:00</dd>
-            <dt class="current-location__item">期間</dt>
-            <dd class="current-location__content">2020/11/01-2020/12/30</dd>
-            <dt class="current-location__item">TEL</dt>
-            <dd class="current-location__content">090-0000-0000</dd>
+            <div class="current-location__item__outer">
+              <dt class="current-location__item">営業時間</dt>
+              <dd class="current-location__content">9:00-18:00</dd>
+            </div>
+            <div class="current-location__item__outer">
+              <dt class="current-location__item">期間</dt>
+              <dd class="current-location__content">2020/11/01-2020/12/30</dd>
+            </div>
+            <div class="current-location__item__outer">
+              <dt class="current-location__item">TEL</dt>
+              <dd class="current-location__content">090-0000-0000</dd>
+            </div>
           </div>
         </div>
       </dl>
@@ -208,40 +328,54 @@
     <!-- end current-store-location -->
 
     <!-- news -->
-    <section class="section section__news">
+    <section id="js-news" class="section section__news">
       <div class="section__title__outer">
         <span class="section__title-en section__title-en--news">News</span>
         <h2 class="section__title-ja">お知らせ・ブログ</h2>
       </div>
       <div class="news">
-        <article class="news__box">
-          <img src="./img/news-1.jpg" alt="" class="news__img" />
-          <span class="news__date">2020/12/15</span>
-          <h3 class="news__title">
-            お知らせのタイトルが入りますお知らせのタイトルが入ります
-          </h3>
-        </article>
-        <article class="news__box">
-          <img src="./img/news-2.jpg" alt="" class="news__img" />
-          <span class="news__date">2020/12/15</span>
-          <h3 class="news__title">
-            お知らせのタイトルが入りますお知らせのタイトルが入ります
-          </h3>
-        </article>
-        <article class="news__box">
-          <img src="./img/news-3.jpg" alt="" class="news__img" />
-          <span class="news__date">2020/12/15</span>
-          <h3 class="news__title">
-            お知らせのタイトルが入りますお知らせのタイトルが入ります
-          </h3>
-        </article>
-        <article class="news__box">
-          <img src="./img/news-2.jpg" alt="" class="news__img" />
-          <span class="news__date">2020/12/15</span>
-          <h3 class="news__title">
-            お知らせのタイトルが入りますお知らせのタイトルが入ります
-          </h3>
-        </article>
+        <a href="#" class="news__box__outer">
+          <article class="news__box">
+            <img
+              src="./img/news-1.jpg"
+              class="news__img"
+              alt=""
+              width="262"
+              height="262"
+            />
+            <span class="news__date">2020/12/15</span>
+            <h3 class="news__title">
+              お知らせのタイトルが入りますお知らせのタイトルが入ります
+            </h3>
+          </article>
+        </a>
+        <a href="#" class="news__box__outer">
+          <article class="news__box">
+            <img src="./img/news-2.jpg" alt="" class="news__img" />
+            <span class="news__date">2020/12/15</span>
+            <h3 class="news__title">
+              お知らせのタイトルが入りますお知らせのタイトルが入ります
+            </h3>
+          </article>
+        </a>
+        <a href="#" class="news__box__outer">
+          <article class="news__box">
+            <img src="./img/news-3.jpg" alt="" class="news__img" />
+            <span class="news__date">2020/12/15</span>
+            <h3 class="news__title">
+              お知らせのタイトルが入りますお知らせのタイトルが入ります
+            </h3>
+          </article>
+        </a>
+        <a href="#" class="news__box__outer">
+          <article class="news__box">
+            <img src="./img/news-2.jpg" alt="" class="news__img" />
+            <span class="news__date">2020/12/15</span>
+            <h3 class="news__title">
+              お知らせのタイトルが入りますお知らせのタイトルが入ります
+            </h3>
+          </article>
+        </a>
       </div>
       <div class="global-btn__outer">
         <a href="#" class="global-btn">VIEW MORE</a>
@@ -250,7 +384,7 @@
     <!-- end news -->
 
     <!-- menu-list -->
-    <section class="section section__menu-list">
+    <section id="menu" class="section section__menu-list">
       <div class="section__title__outer">
         <span class="section__title-en section__title-en--menu-list">Menu</span>
         <h2 class="section__title-ja">商品一覧</h2>
@@ -263,6 +397,8 @@
                 src="./img/menu-2.jpg"
                 alt=""
                 class="menu-list__upper-row__img"
+                width="206"
+                height="206"
               />
               <h3 class="menu-list__upper-row__title">商品名が入ります商品</h3>
               <p class="menu-list__upper-row__price">680円</p>
@@ -359,7 +495,9 @@
               <p class="menu-list__lower-row__price">680円</p>
             </li>
             <li class="menu-list__lower-row__box">
-              <h3 class="menu-list__lower-row__title">商品名が入ります</h3>
+              <h3 class="menu-list__lower-row__title">
+                商品名が入ります商品名が入ります商品名が入ります商品名が入ります
+              </h3>
               <p class="menu-list__lower-row__price">680円</p>
             </li>
             <li class="menu-list__lower-row__box">
@@ -392,77 +530,95 @@
     <!-- end menu-list -->
 
     <!-- post-store-location -->
-    <section class="section section__post-location">
+    <section id="js-post-location" class="section section__post-location">
       <div class="section__title__outer">
         <span class="section__title-en section__title-en--post-location"
-          >Past store openings</span
+          >Post store openings</span
         >
         <h2 class="section__title-ja">これまでの出店場所</h2>
       </div>
       <ul class="post-location">
-        <li class="post-location__box">
-          <img
-            src="./img/store-opening-location-1.jpg"
-            alt=""
-            class="post-location__img"
-          />
-          <div class="post-location__content-wrapper">
-            <span class="post-location__date">2020/12/15</span>
-            <h3 class="post-location__title">
-              実施例のタイトルが入ります実施例のタイトルが入ります
-            </h3>
-            <p class="post-location__text">
-              記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
-            </p>
-          </div>
+        <li class="post-location__box__outer">
+          <a href="" class="post-location__box">
+            <div class="post-location__img__outer">
+              <img
+                src="./img/store-opening-location-1.jpg"
+                alt=""
+                class="post-location__img"
+                width="204"
+                height="150"
+              />
+            </div>
+            <div class="post-location__content-wrapper">
+              <span class="post-location__date">2020/12/15</span>
+              <h3 class="post-location__title">
+                実施例のタイトルが入ります実施例のタイトルが入ります
+              </h3>
+              <p class="post-location__text">
+                記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
+              </p>
+            </div>
+          </a>
         </li>
-        <li class="post-location__box">
-          <img
-            src="./img/store-opening-location-2.jpg"
-            alt=""
-            class="post-location__img"
-          />
-          <div class="post-location__content-wrapper">
-            <span class="post-location__date">2020/12/15</span>
-            <h3 class="post-location__title">
-              実施例のタイトルが入ります実施例のタイトルが入ります
-            </h3>
-            <p class="post-location__text">
-              記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
-            </p>
-          </div>
+        <li class="post-location__box__outer">
+          <a href="" class="post-location__box">
+            <div class="post-location__img__outer">
+              <img
+                src="./img/store-opening-location-2.jpg"
+                alt=""
+                class="post-location__img"
+              />
+            </div>
+            <div class="post-location__content-wrapper">
+              <span class="post-location__date">2020/12/15</span>
+              <h3 class="post-location__title">
+                実施例のタイトルが入ります実施例のタイトルが入ります
+              </h3>
+              <p class="post-location__text">
+                記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
+              </p>
+            </div>
+          </a>
         </li>
-        <li class="post-location__box">
-          <img
-            src="./img/store-opening-location-3.jpg"
-            alt=""
-            class="post-location__img"
-          />
-          <div class="post-location__content-wrapper">
-            <span class="post-location__date">2020/12/15</span>
-            <h3 class="post-location__title">
-              実施例のタイトルが入ります実施例のタイトルが入ります
-            </h3>
-            <p class="post-location__text">
-              記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
-            </p>
-          </div>
+        <li class="post-location__box__outer">
+          <a href="" class="post-location__box">
+            <div class="post-location__img__outer">
+              <img
+                src="./img/store-opening-location-3.jpg"
+                alt=""
+                class="post-location__img"
+              />
+            </div>
+            <div class="post-location__content-wrapper">
+              <span class="post-location__date">2020/12/15</span>
+              <h3 class="post-location__title">
+                実施例のタイトルが入ります実施例のタイトルが入ります
+              </h3>
+              <p class="post-location__text">
+                記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
+              </p>
+            </div>
+          </a>
         </li>
-        <li class="post-location__box">
-          <img
-            src="./img/store-opening-location-2.jpg"
-            alt=""
-            class="post-location__img"
-          />
-          <div class="post-location__content-wrapper">
-            <span class="post-location__date">2020/12/15</span>
-            <h3 class="post-location__title">
-              実施例のタイトルが入ります実施例のタイトルが入ります
-            </h3>
-            <p class="post-location__text">
-              記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
-            </p>
-          </div>
+        <li class="post-location__box__outer">
+          <a href="" class="post-location__box">
+            <div class="post-location__img__outer">
+              <img
+                src="./img/store-opening-location-2.jpg"
+                alt=""
+                class="post-location__img"
+              />
+            </div>
+            <div class="post-location__content-wrapper">
+              <span class="post-location__date">2020/12/15</span>
+              <h3 class="post-location__title">
+                実施例のタイトルが入ります実施例のタイトルが入ります
+              </h3>
+              <p class="post-location__text">
+                記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
+              </p>
+            </div>
+          </a>
         </li>
       </ul>
       <div class="global-btn__outer">
@@ -472,7 +628,7 @@
     <!-- end post-store-location -->
 
     <!-- contact -->
-    <section class="section section__contact">
+    <section id="js-contact" class="section section__contact">
       <div class="section__title__outer">
         <span class="section__title-en section__title-en--contact"
           >Contact</span
@@ -492,10 +648,12 @@
 
       <form action="post" class="contact">
         <div class="contact__form">
-          <div class="contact__require-tag">
+          <div class="contact__require-tag__outer">
             <span class="contact__require-tag">必須</span>
           </div>
-          <label for="name" class="contact__label">氏名</label>
+          <div class="contact__label__outer">
+            <label for="name" class="contact__label">氏名</label>
+          </div>
           <div class="contact__name__outer">
             <input type="text" class="contact__name__surname" />
             <input type="text" class="contact__name__name" />
@@ -515,7 +673,7 @@
         </div>
 
         <div class="contact__form">
-          <div class="contact__require-tag">
+          <div class="contact__require-tag__outer">
             <span class="contact__require-tag">必須</span>
           </div>
           <label for="email" class="contact__label">Eメールアドレス</label>
@@ -523,7 +681,7 @@
         </div>
 
         <div class="contact__form">
-          <div class="contact__require-tag">
+          <div class="contact__require-tag__outer">
             <span class="contact__require-tag">必須</span>
           </div>
           <label for="re-email" class="contact__label"
@@ -548,10 +706,12 @@
     <!-- end contact -->
 
     <!-- company -->
-    <section class="section section__company">
+    <section id="js-company" class="section section__company">
       <div class="section__inner">
         <div class="section__title__outer">
-          <span class="section__title-en">Company</span>
+          <span class="section__title-en section__title-en--company"
+            >Company</span
+          >
           <h2 class="section__title-ja">会社概要</h2>
         </div>
 
@@ -582,7 +742,13 @@
     <!-- footer -->
     <footer class="footer">
       <div class="footer__inner">
-        <img src="./img/footer-logo.png" class="footer__logo" />
+        <img
+          src="./img/footer-logo.png"
+          class="footer__logo"
+          alt=""
+          width="147"
+          height="37"
+        />
         <div class="footer__copy-right">© Sekishu-do All Rights Reserved.</div>
       </div>
     </footer>
@@ -590,7 +756,8 @@
 
     <!-- swiper -->
     <script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- smooth-scroll -->
+    <script src="./plugins/smooth-scroll-polyfills.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>

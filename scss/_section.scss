@@ -25,7 +25,7 @@
   &__contact {
     padding: 0;
     background-color: $base-bg-color;
-    border-radius: 338px;
+    border-radius: convertVw(338, 1500);
     padding-top: 7rem;
   }
 
@@ -45,6 +45,7 @@
       color: $base-text-color;
       line-height: 1.2;
       position: relative;
+      letter-spacing: 0.01em;
 
       &--current {
         &::before {
@@ -126,6 +127,22 @@
           right: -230%;
         }
       }
+
+      &--company {
+        &::before {
+          content: "• • • • • • • •";
+          position: absolute;
+          bottom: -39%;
+          left: -198%;
+        }
+
+        &::after {
+          content: "• • • • • • • •";
+          position: absolute;
+          bottom: -39%;
+          right: -198%;
+        }
+      }
     }
 
     &-ja {
@@ -170,6 +187,120 @@
     &__menu-list {
       padding-right: 0;
       padding-left: 0;
+    }
+
+    &__post-location {
+      padding-bottom: 0;
+    }
+  }
+}
+
+/***********************************
+* break-point-sp 767以下
+***********************************/
+@media (max-width: $sp-window-size) {
+  .section {
+    padding-right: convertVw(60, 767);
+    padding-left: convertVw(60, 767);
+    margin-top: 10rem;
+
+    &__menu-list {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    &__title {
+      &-en {
+        font-size: 1.5rem;
+      }
+      &-ja {
+        font-size: 2.2rem;
+      }
+    }
+
+    &__contact {
+      padding-top: 4rem;
+    }
+
+    &__company {
+      padding-bottom: 10rem;
+    }
+  }
+}
+
+/***********************************
+* break-point-sp500 500以下
+***********************************/
+@media (max-width: $sp500-window-size) {
+  .section {
+    padding-right: convertVw(20, 500);
+    padding-left: convertVw(20, 500);
+    margin-top: 7rem;
+
+    &__menu-list {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    &__title {
+      &-en--current:before {
+        content: "• • •";
+        left: -27%;
+      }
+
+      &-en--current:after {
+        content: "• • •";
+        right: -27%;
+      }
+      &-en--news:before {
+        content: "• • •";
+        left: -315%;
+      }
+
+      &-en--news:after {
+        content: "• • •";
+        right: -315%;
+      }
+      &-en--menu-list:before {
+        content: "• • •";
+        left: -180%;
+      }
+
+      &-en--menu-list:after {
+        content: "• • •";
+        right: -180%;
+      }
+      &-en--post-location:before {
+        content: "• • •";
+        left: -48%;
+      }
+
+      &-en--post-location:after {
+        content: "• • •";
+        right: -48%;
+      }
+
+      &-en--contact:before {
+        content: "• • •";
+        left: -136%;
+        color: #fff;
+      }
+
+      &-en--contact:after {
+        content: "• • •";
+        right: -136%;
+        color: #fff;
+      }
+
+      &-en--company:before {
+        content: "• • •";
+        left: -96%;
+      }
+
+      &-en--company:after {
+        content: "• • •";
+        right: -96%;
+      }
     }
   }
 }
