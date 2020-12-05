@@ -3,19 +3,32 @@
 .post-location {
   display: flex;
   flex-wrap: wrap;
-  margin: 6rem -4rem 2rem -4rem;
+  margin: 6rem convertVw(-40, 1500) 2rem convertVw(-40, 1500);
 
   &__box {
-    width: calc(100% / 2);
+    width: 100%;
     box-sizing: border-box;
     display: flex;
-    padding: 0 4rem;
+    padding: 0 convertVw(40, 1500);
     margin-bottom: 3rem;
+
+    &__outer {
+      width: calc(100% / 2);
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__img {
-    border-radius: 66px;
+    width: convertVw(204, 1500);
+    height: convertVw(150, 1500);
+    border-radius: convertVw(66, 1500);
     object-fit: cover;
+
+    &__outer {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__content-wrapper {
@@ -28,6 +41,23 @@
     color: $text-gray;
     margin-bottom: 0.5rem;
     display: block;
+    position: relative;
+
+    &:after {
+      content: "カテゴリ名カテゴリ名カテゴリ名";
+      position: absolute;
+      top: -2px;
+      left: 9rem;
+      color: #fff;
+      font-size: 1.1rem;
+      background-color: $base-bg-color;
+      letter-spacing: 0.03em;
+      border-radius: 5px;
+      padding: 3px 1.7rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__title {
@@ -39,5 +69,128 @@
   &__text {
     font-size: 12px;
     color: $text-gray;
+  }
+}
+
+/***********************************
+* break-point-tablet 1110以下
+***********************************/
+
+@media (max-width: $tablet-window-size) {
+  .post-location {
+    margin: 5rem convertVw(-20, 1109) 2rem convertVw(-20, 1109);
+
+    &__date {
+      font-size: convertVw(11, 1109);
+
+      &:after {
+        content: "カテゴリ名カテゴリ名カテゴリ名";
+        position: absolute;
+        top: -1px;
+        left: 7.5rem;
+        color: #fff;
+        font-size: 0.5px;
+        border-radius: 5px;
+        padding: convertVw(1.5, 1109) convertVw(8, 1109);
+      }
+    }
+
+    &__title {
+      font-size: convertVw(13, 1109);
+    }
+
+    &__text {
+      font-size: convertVw(10, 1109);
+    }
+
+    &__box {
+      padding: 0 convertVw(20, 1109);
+    }
+
+    &__img {
+      width: convertVw(204, 1109);
+      height: convertVw(150, 1109);
+      border-radius: convertVw(50, 1109);
+    }
+
+    &__content-wrapper {
+      width: 58%;
+    }
+  }
+}
+
+/***********************************
+* break-point-tablet 767以下
+***********************************/
+
+@media (max-width: $sp-window-size) {
+  .post-location {
+    margin-top: 3.5rem;
+    margin-bottom: 2.5rem;
+
+    &__box {
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      padding: 0 convertVw(40, 1500);
+      margin-bottom: 2rem;
+      justify-content: space-around;
+
+      &__outer {
+        width: 100%;
+      }
+    }
+
+    &__date {
+      font-size: convertVw(11, 767);
+    }
+
+    &__title {
+      font-size: convertVw(15, 767);
+    }
+
+    &__text {
+      font-size: convertVw(10, 767);
+    }
+
+    &__img {
+      width: convertVw(250, 767);
+      height: convertVw(190, 767);
+      border-radius: convertVw(50, 767);
+    }
+
+    &__content-wrapper {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+    }
+  }
+}
+
+/***********************************
+* break-point-sp500 500px以下
+***********************************/
+
+@media (max-width: $sp500-window-size) {
+  .post-location {
+    &__img {
+      width: convertVw(200, 500);
+      height: convertVw(150, 500);
+      border-radius: convertVw(50, 500);
+    }
+
+    &__date {
+      font-size: convertVw(8, 500);
+    }
+
+    &__title {
+      font-size: convertVw(13, 500);
+    }
+
+    &__text {
+      font-size: convertVw(8, 500);
+    }
   }
 }

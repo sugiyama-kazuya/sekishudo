@@ -7,6 +7,26 @@
   padding-left: convertVw(171, 1500);
   padding-right: convertVw(168, 1500);
   height: 5.4rem;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+
+  &.start-fixed {
+    animation: popup forwards 0.3s;
+    position: fixed;
+    z-index: $z-index-xx;
+  }
+  &.end-fixed {
+    position: fixed;
+    animation: popdown forwards 0.3s;
+    z-index: $z-index-xx;
+  }
+
+  &.js-nav-menu-active .global-nav {
+    opacity: 0;
+    transition: opacity 0.1s;
+  }
 
   &__inner {
     display: flex;
@@ -23,6 +43,7 @@
       width: 29%;
       display: flex;
       align-items: flex-end;
+      z-index: $z-index-l;
     }
   }
 
@@ -74,12 +95,34 @@
   .header {
     padding-left: convertVw(140, 1109);
     padding-right: convertVw(140, 1109);
+
+    &__inner__left {
+      align-items: center;
+    }
   }
 }
 /***********************************
 * break-point-sp 767px以下
 ***********************************/
 
+@media (max-width: $sp-window-size) {
+  .header {
+    padding-left: convertVw(40, 767);
+    padding-right: convertVw(40, 767);
+
+    &__logo {
+      width: 12rem;
+    }
+  }
+}
+
 /***********************************
 * break-point-sp500 500px以下
 ***********************************/
+
+@media (max-width: $sp500-window-size) {
+  .header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

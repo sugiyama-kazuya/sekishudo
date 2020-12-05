@@ -15,7 +15,7 @@
 
   &__tag {
     box-sizing: border-box;
-    padding: 1.8rem 2.5rem 1.8rem 2.5rem;
+    padding: 1.8rem 2.5rem;
     width: 15.6rem;
     height: auto;
     vertical-align: middle;
@@ -28,7 +28,7 @@
   }
   &__content {
     box-sizing: border-box;
-    padding: 1.8rem 2.5rem 1.8rem 2.5rem;
+    padding: 1.8rem 2.5rem;
     width: 47rem;
     vertical-align: middle;
     border-bottom: 1px solid #d3cfc8;
@@ -42,6 +42,51 @@
       td {
         border-bottom: none;
       }
+    }
+  }
+}
+
+/***********************************
+* break-point-tablet 1110以下
+***********************************/
+
+@media (max-width: $tablet-window-size) {
+  .company {
+    &__outer {
+      margin-top: 4rem;
+    }
+
+    &__tag {
+      font-size: 1.3rem;
+    }
+
+    &__content {
+      font-size: 1.3rem;
+    }
+  }
+}
+/***********************************
+* break-point-sp 767px以下
+***********************************/
+
+/***********************************
+* break-point-sp500 500px以下
+***********************************/
+@media (max-width: $sp500-window-size) {
+  .company {
+    &__outer {
+      margin-top: 3rem;
+    }
+
+    &__tag {
+      font-size: 1.1rem;
+      width: 11rem;
+      padding: convertVw(17, 500) convertVw(20, 500);
+    }
+
+    &__content {
+      font-size: 1.1rem;
+      padding: convertVw(17, 500) convertVw(20, 500);
     }
   }
 }

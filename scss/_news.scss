@@ -7,14 +7,25 @@
   letter-spacing: 0.03em;
 
   &__box {
-    width: calc(100% / 4);
+    width: 100%;
+    height: auto;
     padding: 0 1rem;
     box-sizing: border-box;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &__outer {
+      width: calc(100% / 4);
+    }
   }
 
   &__img {
     width: 100%;
+    height: auto;
     border-radius: 25%;
+    object-fit: cover;
   }
 
   &__date {
@@ -22,12 +33,14 @@
     color: $text-gray;
     margin-top: 8px;
     display: block;
+    letter-spacing: 0.03em;
   }
 
   &__title {
     font-size: 1.5rem;
     color: $text-black;
     line-height: 1.6;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -39,7 +52,7 @@
   .news {
     margin-top: 4rem;
     margin-bottom: 4rem;
-    
+
     &__date {
       font-size: convertVw(11, 1109);
       margin-bottom: 4px;
@@ -47,6 +60,85 @@
 
     &__title {
       font-size: convertVw(13, 1109);
+    }
+  }
+}
+/***********************************
+* break-point-tablet 767以下
+***********************************/
+
+@media (max-width: $sp-window-size) {
+  .news {
+    margin-top: 3rem;
+    margin-bottom: 0;
+
+    &__box {
+      width: 100%;
+      padding: 0 1rem;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &__outer {
+        width: calc(100% / 2);
+      }
+    }
+
+    &__img {
+      width: 90%;
+    }
+
+    &__date {
+      text-align: center;
+      font-size: convertVw(10, 767);
+      margin-bottom: 6px;
+    }
+
+    &__title {
+      text-align: center;
+      width: 80%;
+      font-size: convertVw(12, 767);
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+/***********************************
+* break-point-sp500 500px以下
+***********************************/
+
+@media (max-width: $sp500-window-size) {
+  .news {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__box {
+      width: 100%;
+
+      &__outer {
+        width: 100%;
+      }
+    }
+
+    &__img {
+      width: 80%;
+      height: 15rem;
+      border-radius: 5rem;
+    }
+
+    &__date {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+    }
+
+    &__title {
+      width: 70%;
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
     }
   }
 }

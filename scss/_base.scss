@@ -11,6 +11,8 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "sourcehansans-jp-regular";
+  background-color: $sub-bg-color;
+  letter-spacing: 0.03em;
 }
 
 a {
@@ -32,12 +34,14 @@ button {
   background-color: transparent;
 }
 
+// サイトマップ
 .site-map {
   border-radius: 66px;
   border: solid 13px $text-white;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
+// グローバルボタン
 .global-btn {
   font: {
     size: 1.5rem;
@@ -51,6 +55,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  letter-spacing: 0.03em;
 
   &__outer {
     width: 23.7rem;
@@ -78,7 +83,27 @@ button {
 /***********************************
 * break-point-sp 767px以下
 ***********************************/
+@media (max-width: $sp-window-size) {
+  .site-map {
+    margin-top: 2rem;
+  }
+}
 
 /***********************************
 * break-point-sp500 500px以下
 ***********************************/
+@media (max-width: $sp500-window-size) {
+  .site-map {
+    margin-top: 2rem;
+  }
+
+  .global-btn {
+    font-size: 1.1rem;
+    border-radius: 2.2rem;
+
+    &__outer {
+      width: 19rem;
+      height: 4rem;
+    }
+  }
+}

@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-%tag {
-  display: flex;
-  align-items: center;
-}
-
 %form {
   padding: 0 0.5rem;
   height: 4rem;
@@ -29,6 +24,10 @@
       family: "gloria-hallelujah";
     }
     color: $base-text-color;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   &__form {
@@ -39,10 +38,7 @@
     grid-template:
       "require tag form"
       / 5.3rem 20.7rem 34.9rem;
-
-    &:not(:last-child) {
-      margin-bottom: 1rem;
-    }
+    margin-bottom: 1rem;
 
     &__content {
       align-items: flex-start;
@@ -115,6 +111,7 @@
       family: "century-gothic-bold";
     }
     color: $contact-text-color;
+    letter-spacing: 0.035em;
 
     &__outer {
       display: flex;
@@ -141,11 +138,136 @@
         family: "m-plus-rounded-1c-regular";
       }
       color: $contact-text-color;
+      letter-spacing: 0.05em;
     }
   }
 
   &__hours {
     font-size: 1.4rem;
     color: $contact-text-color;
+  }
+}
+
+/***********************************
+* break-point-tablet 1110以下
+***********************************/
+
+@media (max-width: $tablet-window-size) {
+  .contact {
+    &__tell {
+      font-size: 3.2rem;
+
+      &__title {
+        font-size: 1.3rem;
+      }
+    }
+
+    &__hours {
+      font-size: 1.2rem;
+    }
+    &__require-tag {
+      font-size: 1rem;
+    }
+
+    &__contact__label {
+      font-size: 1.2rem;
+    }
+
+    &__btn {
+      width: 21.3rem;
+      height: 5rem;
+      font-size: 1.3rem;
+      margin-top: 3rem;
+    }
+
+    &__information {
+      margin-top: 4rem;
+    }
+  }
+}
+/***********************************
+* break-point-sp 767px以下
+***********************************/
+
+@media (max-width: $sp-window-size) {
+  .contact {
+    margin-top: 3rem;
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: auto;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    &__require-tag {
+      display: none;
+    }
+
+    &__label {
+      display: block;
+      margin-bottom: 5px;
+
+      &:after {
+        content: "必須";
+        border-radius: 3px;
+        background-color: $contact-item-tag-color;
+        padding: 1px 3px;
+        font-size: 7px;
+        text-align: center;
+        line-height: 7px;
+        margin-left: 8px;
+      }
+    }
+
+    &__name {
+      &__outer {
+        width: 100%;
+      }
+    }
+
+    &__email {
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    &__content {
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    &__information {
+      margin-top: 3rem;
+    }
+  }
+}
+/***********************************
+* break-point-sp500 500px以下
+***********************************/
+@media (max-width: $sp500-window-size) {
+  .contact {
+    &__label {
+      font-size: 1.2rem;
+    }
+
+    &__btn {
+      width: 19rem;
+      height: 4rem;
+      font-size: 1.1rem;
+    }
+
+    &__tell {
+      font-size: 3rem;
+
+      &__title {
+        font-size: 1.1rem;
+      }
+    }
+
+    &__hours {
+      font-size: 1.1rem;
+    }
   }
 }
