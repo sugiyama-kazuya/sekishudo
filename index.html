@@ -20,7 +20,7 @@
   <body>
     <!-- header -->
 
-    <header id="js-header" class="header">
+    <header data-scroll-header id="header" class="header">
       <div class="header__inner">
         <div class="header__inner__left">
           <a id="js-nav-menu-target" href="#top" class="header__img__outer">
@@ -39,6 +39,7 @@
             <ul class="global-nav__inner">
               <li class="global-nav__item">
                 <a
+                  data-scroll
                   id="js-nav-menu-target"
                   href="#current-location"
                   class="global-nav__item__link global-nav--track-icon"
@@ -47,6 +48,7 @@
               </li>
               <li class="global-nav__item">
                 <a
+                  data-scroll
                   href=""
                   class="global-nav__item__link global-nav--calendar-icon"
                   >出店予定</a
@@ -87,6 +89,7 @@
             id="js-nav-menu-target"
             href="#header"
             class="burger-menu__item__link"
+            data-scroll
             >TOP</a
           >
         </li>
@@ -95,11 +98,16 @@
             id="js-nav-menu-target"
             href="#concept"
             class="burger-menu__item__link"
+            data-scroll
             >コンセプト</a
           >
         </li>
         <li class="burger-menu__item">
-          <a id="js-nav-menu-target" href="#" class="burger-menu__item__link"
+          <a
+            id="js-nav-menu-target"
+            href="#"
+            class="burger-menu__item__link"
+            data-scroll
             >今後の出店予定</a
           >
         </li>
@@ -108,6 +116,7 @@
             id="js-nav-menu-target"
             href="#news"
             class="burger-menu__item__link"
+            data-scroll
             >お知らせ・ブログ</a
           >
         </li>
@@ -116,6 +125,7 @@
             id="js-nav-menu-target"
             href="#post-location"
             class="burger-menu__item__link"
+            data-scroll
             >これまでの出展場所</a
           >
         </li>
@@ -124,6 +134,7 @@
             id="js-nav-menu-target"
             href="#contact"
             class="burger-menu__item__link"
+            data-scroll
             >お問合せ</a
           >
         </li>
@@ -132,6 +143,7 @@
             id="js-nav-menu-target"
             href="#company"
             class="burger-menu__item__link"
+            data-scroll
             >会社概要</a
           >
         </li>
@@ -147,6 +159,7 @@
             id="js-nav-menu-target"
             href="#header"
             class="burger-menu__item__link"
+            data-scroll
             >TOP</a
           >
         </li>
@@ -155,6 +168,7 @@
             id="js-nav-menu-target"
             href="#concept"
             class="burger-menu__item__link"
+            data-scroll
             >コンセプト</a
           >
         </li>
@@ -163,11 +177,16 @@
             id="js-nav-menu-target"
             href="#current-location"
             class="burger-menu__item__link"
+            data-scroll
             >現在の出店場所</a
           >
         </li>
         <li class="burger-menu__item">
-          <a id="js-nav-menu-target" href="#" class="burger-menu__item__link"
+          <a
+            id="js-nav-menu-target"
+            href="#"
+            class="burger-menu__item__link"
+            data-scroll
             >今後の出店予定</a
           >
         </li>
@@ -176,6 +195,7 @@
             id="js-nav-menu-target"
             href="#news"
             class="burger-menu__item__link"
+            data-scroll
             >お知らせ・ブログ</a
           >
         </li>
@@ -184,6 +204,7 @@
             id="js-nav-menu-target"
             href="#post-location"
             class="burger-menu__item__link"
+            data-scroll
             >これまでの出店場所</a
           >
         </li>
@@ -192,6 +213,7 @@
             id="js-nav-menu-target"
             href="#menu"
             class="burger-menu__item__link"
+            data-scroll
             >メニュー</a
           >
         </li>
@@ -200,6 +222,7 @@
             id="js-nav-menu-target"
             href="#contact"
             class="burger-menu__item__link"
+            data-scroll
             >お問合せ</a
           >
         </li>
@@ -208,6 +231,7 @@
             id="js-nav-menu-target"
             href="#company"
             class="burger-menu__item__link"
+            data-scroll
             >会社概要</a
           >
         </li>
@@ -243,12 +267,15 @@
       </div>
       <div class="swiper-pagination"></div>
       <div class="fv__title__box">
-        <h1 class="fv__title">これはダミーテキストです</h1>
-        <h1 class="fv__title">実際にはキャチコピーが入ります</h1>
+        <h1 class="fv__title">
+          これはダミーテキストです実際にはキャチコピーが入ります
+        </h1>
+        <h1 class="fv__title">
+          実際にはキャチコピーが入ります
       </div>
       <!-- social-btn -->
       <div class="social-btn">
-        <a href="#" class="social-btn__line"><span></span></a
+        <a id="sample" href="#" class="social-btn__line"><span></span></a
         ><a href="#" class="social-btn__instagram"><span></span></a>
       </div>
       <!-- end social-btn -->
@@ -256,7 +283,7 @@
     <!-- end fv -->
 
     <!-- concept -->
-    <section id="js-concept" class="section section__concept">
+    <section id="concept" class="section section__concept">
       <div class="concept">
         <img
           src="./img/concept.jpg"
@@ -280,7 +307,7 @@
 
     <!-- current-store-location -->
     <section
-      id="js-current-location"
+      id="current-location"
       class="section section__current-store-location"
     >
       <div class="section__title__outer">
@@ -328,7 +355,7 @@
     <!-- end current-store-location -->
 
     <!-- news -->
-    <section id="js-news" class="section section__news">
+    <section id="news" class="section section__news">
       <div class="section__title__outer">
         <span class="section__title-en section__title-en--news">News</span>
         <h2 class="section__title-ja">お知らせ・ブログ</h2>
@@ -345,7 +372,7 @@
             />
             <span class="news__date">2020/12/15</span>
             <h3 class="news__title">
-              お知らせのタイトルが入りますお知らせのタイトルが入ります
+              お知らせのタイトルが入りますお知らせのタイトルが入りますお知らせのタイトルが入りますお知らせのタイトルが入りますお知らせのタイトルが入りますお知らせのタイトルが入りますお知らせのタイトルが入りますお知らせのタイトルが入りますお知らせのタイトルが入りますお知らせのタイトルが入りますお知らせのタイトルが入りますお知らせのタイトルが入ります
             </h3>
           </article>
         </a>
@@ -427,7 +454,9 @@
                 alt=""
                 class="menu-list__upper-row__img"
               />
-              <h3 class="menu-list__upper-row__title">商品名が入ります商品</h3>
+              <h3 class="menu-list__upper-row__title">
+                商品名が入ります商品商品名が入ります商品商品名が入ります商品商品名が入ります商品商品名が入ります商品商品名が入ります商品商品名が入ります商品商品名が入ります商品商品名が入ります商品
+              </h3>
               <p class="menu-list__upper-row__price">680円</p>
             </li>
             <li class="menu-list__upper-row__box">
@@ -496,12 +525,14 @@
             </li>
             <li class="menu-list__lower-row__box">
               <h3 class="menu-list__lower-row__title">
-                商品名が入ります商品名が入ります商品名が入ります商品名が入ります
+                商品名が入ります商品名が入ります
               </h3>
               <p class="menu-list__lower-row__price">680円</p>
             </li>
             <li class="menu-list__lower-row__box">
-              <h3 class="menu-list__lower-row__title">商品名が入ります</h3>
+              <h3 class="menu-list__lower-row__title">
+                商品名が入ります商品名が入ります商品名が入ります商品名が入ります
+              </h3>
               <p class="menu-list__lower-row__price">680円</p>
             </li>
             <li class="menu-list__lower-row__box">
@@ -530,7 +561,7 @@
     <!-- end menu-list -->
 
     <!-- post-store-location -->
-    <section id="js-post-location" class="section section__post-location">
+    <section id="post-location" class="section section__post-location">
       <div class="section__title__outer">
         <span class="section__title-en section__title-en--post-location"
           >Post store openings</span
@@ -550,7 +581,12 @@
               />
             </div>
             <div class="post-location__content-wrapper">
-              <span class="post-location__date">2020/12/15</span>
+              <div class="post-location__upper-row">
+                <span class="post-location__date">2020/12/15</span>
+                <span class="post-location__category"
+                  >カテゴリ名カテゴリ名カテゴリ</span
+                >
+              </div>
               <h3 class="post-location__title">
                 実施例のタイトルが入ります実施例のタイトルが入ります
               </h3>
@@ -570,7 +606,10 @@
               />
             </div>
             <div class="post-location__content-wrapper">
-              <span class="post-location__date">2020/12/15</span>
+              <div class="post-location__upper-row">
+                <span class="post-location__date">2020/12/15</span>
+                <span class="post-location__category">カテゴリ名</span>
+              </div>
               <h3 class="post-location__title">
                 実施例のタイトルが入ります実施例のタイトルが入ります
               </h3>
@@ -590,9 +629,12 @@
               />
             </div>
             <div class="post-location__content-wrapper">
-              <span class="post-location__date">2020/12/15</span>
+              <div class="post-location__upper-row">
+                <span class="post-location__date">2020/12/15</span>
+                <span class="post-location__category">カテゴリ名</span>
+              </div>
               <h3 class="post-location__title">
-                実施例のタイトルが入ります実施例のタイトルが入ります
+                実施例のタイトルが入ります実施例のタイトルが入ります実施例のタイトルが入ります実施例のタイトル
               </h3>
               <p class="post-location__text">
                 記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
@@ -610,7 +652,10 @@
               />
             </div>
             <div class="post-location__content-wrapper">
-              <span class="post-location__date">2020/12/15</span>
+              <div class="post-location__upper-row">
+                <span class="post-location__date">2020/12/15</span>
+                <span class="post-location__category">カテゴリ名</span>
+              </div>
               <h3 class="post-location__title">
                 実施例のタイトルが入ります実施例のタイトルが入ります
               </h3>
@@ -628,7 +673,7 @@
     <!-- end post-store-location -->
 
     <!-- contact -->
-    <section id="js-contact" class="section section__contact">
+    <section id="contact" class="section section__contact">
       <div class="section__title__outer">
         <span class="section__title-en section__title-en--contact"
           >Contact</span
@@ -706,7 +751,7 @@
     <!-- end contact -->
 
     <!-- company -->
-    <section id="js-company" class="section section__company">
+    <section id="company" class="section section__company">
       <div class="section__inner">
         <div class="section__title__outer">
           <span class="section__title-en section__title-en--company"
@@ -754,6 +799,7 @@
     </footer>
     <!-- end footer -->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- swiper -->
     <script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- smooth-scroll -->

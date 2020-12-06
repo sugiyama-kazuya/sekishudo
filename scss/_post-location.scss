@@ -36,28 +36,29 @@
     padding: 1rem 0 1rem 1.5rem;
   }
 
+  &__upper-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
   &__date {
     font-size: 13px;
-    color: $text-gray;
-    margin-bottom: 0.5rem;
     display: block;
-    position: relative;
+    margin-right: 7px;
+    color: $text-gray;
+  }
 
-    &:after {
-      content: "カテゴリ名カテゴリ名カテゴリ名";
-      position: absolute;
-      top: -2px;
-      left: 9rem;
-      color: #fff;
-      font-size: 1.1rem;
-      background-color: $base-bg-color;
-      letter-spacing: 0.03em;
-      border-radius: 5px;
-      padding: 3px 1.7rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  &__category {
+    color: #fff;
+    font-size: convertVw(10, 1500);
+    background-color: $base-bg-color;
+    letter-spacing: 0.03em;
+    border-radius: 5px;
+    padding: 3px 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__title {
@@ -80,19 +81,23 @@
   .post-location {
     margin: 5rem convertVw(-20, 1109) 2rem convertVw(-20, 1109);
 
-    &__date {
-      font-size: convertVw(11, 1109);
+    &__upper-row {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: 5px;
+    }
 
-      &:after {
-        content: "カテゴリ名カテゴリ名カテゴリ名";
-        position: absolute;
-        top: -1px;
-        left: 7.5rem;
-        color: #fff;
-        font-size: 0.5px;
-        border-radius: 5px;
-        padding: convertVw(1.5, 1109) convertVw(8, 1109);
-      }
+    &__date {
+      margin-bottom: 5px;
+      font-size: convertVw(11, 1109);
+    }
+
+    &__category {
+      font-size: 8px;
+      border-radius: 5px;
+      padding: 3px 7px;
     }
 
     &__title {
@@ -143,6 +148,12 @@
 
     &__date {
       font-size: convertVw(11, 767);
+    }
+
+    &__category {
+      font-size: 6px;
+      border-radius: 5px;
+      padding: 3px 7px;
     }
 
     &__title {
