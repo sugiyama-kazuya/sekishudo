@@ -15,6 +15,13 @@ html {
   letter-spacing: 0.03em;
 }
 
+body {
+  &.nav-menu-active {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+}
+
 a {
   text-decoration: none;
   &:hover {
@@ -86,6 +93,7 @@ button {
 @media (max-width: $sp-window-size) {
   .site-map {
     margin-top: 2rem;
+    height: 40rem;
   }
 }
 
@@ -94,7 +102,7 @@ button {
 ***********************************/
 @media (max-width: $sp500-window-size) {
   .site-map {
-    margin-top: 2rem;
+    height: 30rem;
   }
 
   .global-btn {

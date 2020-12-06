@@ -3,13 +3,23 @@ window.onload = function () {
   document
     .getElementById("js-burger-btn")
     .addEventListener("click", function () {
-      const header = document.getElementById("js-header");
+      const header = document.getElementById("header");
       const targetWindowSize = 1110;
       const navMenuPc = document.getElementById("js-nav-menu-pc");
       const navMenuTabletUnder = document.getElementById(
         "js-nav-menu-tablet-sp"
       );
       const burgerBtn = this;
+      const body = document.body;
+
+      // スクロールをさせるかさせないか
+      const isScroll = function (event) {
+        if (navMenuPc.classList.contains("nav-menu-active")) {
+          event.preventDefault();
+        } else {
+          event.stopPropagation();
+        }
+      };
 
       // pcのメニューかtabletspメニューかの判定
       if (window.innerWidth < targetWindowSize) {
@@ -20,23 +30,19 @@ window.onload = function () {
           burgerBtn.classList.remove("burger-btn-active");
           return;
         }
-        // tablet・spサイズ 閉じる時
+        // tablet・spのメニューが閉じる時
         if (navMenuTabletUnder.classList.contains("nav-menu-active")) {
           navMenuTabletUnder.classList.remove("nav-menu-active");
           burgerBtn.classList.remove("burger-btn-active");
           header.classList.remove("js-nav-menu-active");
-          // document.removeEventListener("touchmove", noScroll, {
-          //   passive: false,
-          // });
-          console.log("タブレットを閉じる時");
+          body.classList.remove("nav-menu-active");
+
           return;
         } else {
           navMenuTabletUnder.classList.add("nav-menu-active");
           burgerBtn.classList.add("burger-btn-active");
           header.classList.add("js-nav-menu-active");
-          // document.addEventListener("touchmove", noScroll, {
-          //   passive: false,
-          // });
+          body.classList.add("nav-menu-active");
           return;
         }
       } else {
@@ -47,25 +53,26 @@ window.onload = function () {
           burgerBtn.classList.remove("burger-btn-active");
           return;
         }
-        // pcサイズ 閉じる時
+        // pcのメニュー 閉じる時
         if (navMenuPc.classList.contains("nav-menu-active")) {
+          document.removeEventListener("mousewheel", isScroll, {
+            passive: false,
+          });
           navMenuPc.classList.remove("nav-menu-active");
           burgerBtn.classList.remove("burger-btn-active");
           header.classList.remove("js-nav-menu-active");
-          // document.removeEventListener("mousewheel", noScroll, {
-          //   passive: false,
-          // });
-          console.log("pcを閉じる時");
+          body.classList.remove("nav-menu-active");
+          // $(window).off("mousewheel");
 
           return;
         } else {
+          document.addEventListener("mousewheel", isScroll, {
+            passive: false,
+          });
           navMenuPc.classList.add("nav-menu-active");
           burgerBtn.classList.add("burger-btn-active");
           header.classList.add("js-nav-menu-active");
-          document.addEventListener("mousewheel", noScroll, {
-            passive: false,
-          });
-          console.log("pcを開く時");
+          body.classList.add("nav-menu-active");
         }
       }
     });
@@ -73,7 +80,7 @@ window.onload = function () {
 
   // 固定ヘッダーのスクロールアニメーション
   document.addEventListener("scroll", function () {
-    const header = document.getElementById("js-header");
+    const header = document.getElementById("header");
     const fv = document.getElementById("js-fv");
     const getElementDistance = fv.offsetTop + fv.clientHeight * 0.5;
     const headerHeight = 54;
@@ -108,66 +115,40 @@ window.onload = function () {
     },
   });
 
-  メニューからの遷移時のスムースアニメーション;
+  // メニューからの遷移時のスムースアニメーション;
   const smoothAction = function () {
     const smoothScrollTriger = document.querySelectorAll("#js-nav-menu-target");
 
     for (let i = 0; i < smoothScrollTriger.length; i++) {
       smoothScrollTriger[i].addEventListener("click", function (e) {
-        e.preventDefault();
-
-        const headerHeight = 54;
         const navMenuPc = document.getElementById("js-nav-menu-pc");
         const navMenuTabletAndSp = document.getElementById(
           "js-nav-menu-tablet-sp"
         );
         const burgerBtn = document.getElementById("js-burger-btn");
-        const top = "js-header";
-        const header = document.getElementById("js-header");
+        const header = document.getElementById("header");
+        const body = document.body;
 
         // ナビメニューを開いていたら閉じる処理
         if (navMenuPc.classList.contains("nav-menu-active")) {
           navMenuPc.classList.remove("nav-menu-active");
           burgerBtn.classList.remove("burger-btn-active");
           header.classList.remove("js-nav-menu-active");
+          body.classList.remove("nav-menu-active");
         }
 
         if (navMenuTabletAndSp.classList.contains("nav-menu-active")) {
           navMenuTabletAndSp.classList.remove("nav-menu-active");
           burgerBtn.classList.remove("burger-btn-active");
           header.classList.remove("js-nav-menu-active");
+          body.classList.remove("nav-menu-active");
         }
 
-        // 属性を取得
-        let href = smoothScrollTriger[i].getAttribute("href");
-        // 属性からターゲットとなる箇所を取得して、DOMから取得
-        let targetElement = document.getElementById(href.replace("#", "js-"));
-
-        if (targetElement) {
-          if (targetElement.id === top) {
-            window.scrollTo({
-              top: 0,
-              behavior: "smooth",
-            });
-            return;
-          } else {
-            // getBoundingClientRect = 現在表示されている画面の上部の高さを取得する
-            // ターゲットの上から見た位置を取得する。
-            const rect = targetElement.getBoundingClientRect().top;
-            // 現在のスクロール量を取得する
-            const offset = window.pageYOffset;
-
-            const target = rect + offset - headerHeight;
-
-            window.scrollTo({
-              top: target,
-              behavior: "smooth",
-            });
-          }
-        }
+        const scroll = new SmoothScroll('a[href*="#"]', {
+          header: "[data-scroll-header]",
+        });
       });
     }
   };
-
-  var scroll = new SmoothScroll('a[href*="#"]', {});
+  smoothAction();
 };
