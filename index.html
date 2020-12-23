@@ -12,14 +12,16 @@
       href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"
     />
     <!-- swiper -->
-    <link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!-- style.css -->
     <link rel="stylesheet" href="./style.css" />
     <title></title>
   </head>
   <body>
     <!-- header -->
-
     <header data-scroll-header id="header" class="header">
       <div class="header__inner">
         <div class="header__inner__left">
@@ -27,7 +29,7 @@
             <img
               src="./img/header-logo.png"
               class="header__logo"
-              alt=""
+              alt="石修堂のロゴマーク"
               width="147"
               height="37"
             />
@@ -105,7 +107,7 @@
         <li class="burger-menu__item">
           <a
             id="js-nav-menu-target"
-            href="#"
+            href=""
             class="burger-menu__item__link"
             data-scroll
             >今後の出店予定</a
@@ -184,7 +186,7 @@
         <li class="burger-menu__item">
           <a
             id="js-nav-menu-target"
-            href="#"
+            href=""
             class="burger-menu__item__link"
             data-scroll
             >今後の出店予定</a
@@ -248,7 +250,7 @@
           class="fv__logo"
           width="108"
           height="394"
-          alt=""
+          alt="石修堂のロゴマーク"
         />
       </div>
       <!-- <div class="fv__img__outer"> -->
@@ -258,20 +260,21 @@
             <img class="fv__img" src="./img/kv.jpg" alt="" />
           </div>
           <div class="swiper-slide">
-            <img class="fv__img" src="./img/kv.jpg" alt="" />
+            <img class="fv__img" src="./img/concept.jpg" alt="" />
           </div>
           <div class="swiper-slide">
-            <img class="fv__img" src="./img/kv.jpg" alt="" />
+            <img
+              class="fv__img"
+              src="./img/store-opening-location-1.jpg"
+              alt=""
+            />
           </div>
         </div>
       </div>
       <div class="swiper-pagination"></div>
       <div class="fv__title__box">
-        <h1 class="fv__title">
-          これはダミーテキストです実際にはキャチコピーが入ります
-        </h1>
-        <h1 class="fv__title">
-          実際にはキャチコピーが入ります
+        <h1 class="fv__title">これはダミーテキストです</h1>
+        <h1 class="fv__title">実際にはキャチコピーが入ります</h1>
       </div>
       <!-- social-btn -->
       <div class="social-btn">
@@ -289,12 +292,13 @@
           src="./img/concept.jpg"
           width="557"
           height="521"
-          alt=""
+          alt="石修堂のコンセプト"
           class="concept__img"
         />
         <div class="concept__content-box">
           <h2 class="concept__title">
-            実際にコンセプト等のキャッチコピーが入ります
+            実際にコンセプト等の<br />
+            キャッチコピーが入ります
           </h2>
           <p class="concept__text">
             これはダミーテキストです。実際にはコンセプト・魅力の内容が入ります。これはダミーテキストです。実際にはコンセプト・魅力の内容が入ります。これはダミーテキストです。実際にはコンセプト・魅力の内容が入ります。これはダミーテキストです。実際にはコンセプト・魅力の内容が入ります。これはダミーテキストです。実際にはコンセプト・魅力の内容が入ります。
@@ -361,48 +365,69 @@
         <h2 class="section__title-ja">お知らせ・ブログ</h2>
       </div>
       <div class="news">
-        <a href="#" class="news__box__outer">
-          <article class="news__box">
+        <article class="news__box">
+          <a href="#" class="news__box-inner">
             <img
               src="./img/news-1.jpg"
               class="news__img"
-              alt=""
+              alt="お知らせ記事のアイキャッチ画像"
               width="262"
               height="262"
             />
-            <span class="news__date">2020/12/15</span>
+          </a>
+          <span class="news__date">2020/12/15</span>
+          <a href="#" class="news__title-outer">
             <h3 class="news__title">
               お知らせのタイトルが入りますお知らせのタイトルが入りますお知らせのタイトルが入りますお知らせのタイトルが入りますお知らせのタイトルが入りますお知らせのタイトルが入りますお知らせのタイトルが入りますお知らせのタイトルが入りますお知らせのタイトルが入りますお知らせのタイトルが入りますお知らせのタイトルが入りますお知らせのタイトルが入ります
             </h3>
-          </article>
-        </a>
-        <a href="#" class="news__box__outer">
-          <article class="news__box">
-            <img src="./img/news-2.jpg" alt="" class="news__img" />
-            <span class="news__date">2020/12/15</span>
+          </a>
+        </article>
+        <article class="news__box">
+          <a class="news__box-inner" href="#">
+            <img
+              src="./img/news-2.jpg"
+              alt="お知らせ記事のアイキャッチ画像"
+              class="news__img"
+            />
+          </a>
+          <span class="news__date">2020/12/15</span>
+          <a href="#" class="news__title-outer">
             <h3 class="news__title">
               お知らせのタイトルが入りますお知らせのタイトルが入ります
             </h3>
-          </article>
-        </a>
-        <a href="#" class="news__box__outer">
-          <article class="news__box">
-            <img src="./img/news-3.jpg" alt="" class="news__img" />
-            <span class="news__date">2020/12/15</span>
+          </a>
+        </article>
+        <article class="news__box">
+          <a class="news__box-inner" href="#">
+            <img
+              src="./img/news-3.jpg"
+              alt="お知らせ記事のアイキャッチ画像"
+              class="news__img"
+            />
+          </a>
+          <span class="news__date">2020/12/15</span>
+          <a href="#" class="news__title-outer">
             <h3 class="news__title">
               お知らせのタイトルが入りますお知らせのタイトルが入ります
             </h3>
-          </article>
-        </a>
-        <a href="#" class="news__box__outer">
-          <article class="news__box">
-            <img src="./img/news-2.jpg" alt="" class="news__img" />
-            <span class="news__date">2020/12/15</span>
+          </a>
+        </article>
+        <article class="news__box">
+          <a class="news__box-inner" href="#">
+            <img
+              src="./img/news-2.jpg"
+              alt="お知らせ記事のアイキャッチ画像"
+              class="news__img"
+            />
+          </a>
+
+          <span class="news__date">2020/12/15</span>
+          <a href="#" class="news__title-outer">
             <h3 class="news__title">
               お知らせのタイトルが入りますお知らせのタイトルが入ります
             </h3>
-          </article>
-        </a>
+          </a>
+        </article>
       </div>
       <div class="global-btn__outer">
         <a href="#" class="global-btn">VIEW MORE</a>
@@ -422,7 +447,7 @@
             <li class="menu-list__upper-row__box">
               <img
                 src="./img/menu-2.jpg"
-                alt=""
+                alt="商品"
                 class="menu-list__upper-row__img"
                 width="206"
                 height="206"
@@ -433,7 +458,7 @@
             <li class="menu-list__upper-row__box">
               <img
                 src="./img/menu-3.jpg"
-                alt=""
+                alt="商品"
                 class="menu-list__upper-row__img"
               />
               <h3 class="menu-list__upper-row__title">商品名が入ります商品</h3>
@@ -442,7 +467,7 @@
             <li class="menu-list__upper-row__box">
               <img
                 src="./img/menu-4.jpg"
-                alt=""
+                alt="商品"
                 class="menu-list__upper-row__img"
               />
               <h3 class="menu-list__upper-row__title">商品名が入ります商品</h3>
@@ -451,7 +476,7 @@
             <li class="menu-list__upper-row__box">
               <img
                 src="./img/menu-5.jpg"
-                alt=""
+                alt="商品"
                 class="menu-list__upper-row__img"
               />
               <h3 class="menu-list__upper-row__title">
@@ -462,7 +487,7 @@
             <li class="menu-list__upper-row__box">
               <img
                 src="./img/menu-6.jpg"
-                alt=""
+                alt="商品"
                 class="menu-list__upper-row__img"
               />
               <h3 class="menu-list__upper-row__title">商品名が入ります商品</h3>
@@ -471,7 +496,7 @@
             <li class="menu-list__upper-row__box">
               <img
                 src="./img/menu-7.jpg"
-                alt=""
+                alt="商品"
                 class="menu-list__upper-row__img"
               />
               <h3 class="menu-list__upper-row__title">商品名が入ります商品</h3>
@@ -480,7 +505,7 @@
             <li class="menu-list__upper-row__box">
               <img
                 src="./img/menu-8.jpg"
-                alt=""
+                alt="商品"
                 class="menu-list__upper-row__img"
               />
               <h3 class="menu-list__upper-row__title">商品名が入ります商品</h3>
@@ -489,7 +514,7 @@
             <li class="menu-list__upper-row__box">
               <img
                 src="./img/menu-9.jpg"
-                alt=""
+                alt="商品"
                 class="menu-list__upper-row__img"
               />
               <h3 class="menu-list__upper-row__title">商品名が入ります商品</h3>
@@ -569,101 +594,115 @@
         <h2 class="section__title-ja">これまでの出店場所</h2>
       </div>
       <ul class="post-location">
-        <li class="post-location__box__outer">
-          <a href="" class="post-location__box">
-            <div class="post-location__img__outer">
+        <li class="post-location__box">
+          <div class="post-location__img__outer">
+            <a href="">
               <img
                 src="./img/store-opening-location-1.jpg"
-                alt=""
+                alt="これまでの出店場所"
                 class="post-location__img"
                 width="204"
                 height="150"
               />
+            </a>
+          </div>
+          <div class="post-location__content-wrapper">
+            <div class="post-location__upper-row">
+              <span class="post-location__date">2020/12/15</span>
+              <span class="post-location__category">カテゴリ名</span>
             </div>
-            <div class="post-location__content-wrapper">
-              <div class="post-location__upper-row">
-                <span class="post-location__date">2020/12/15</span>
-                <span class="post-location__category"
-                  >カテゴリ名カテゴリ名カテゴリ</span
-                >
-              </div>
+            <a href="">
               <h3 class="post-location__title">
                 実施例のタイトルが入ります実施例のタイトルが入ります
               </h3>
-              <p class="post-location__text">
-                記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
-              </p>
-            </div>
-          </a>
+            </a>
+            <p class="post-location__text">
+              記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
+            </p>
+          </div>
         </li>
-        <li class="post-location__box__outer">
-          <a href="" class="post-location__box">
-            <div class="post-location__img__outer">
+        <li class="post-location__box">
+          <div class="post-location__img__outer">
+            <a href="">
               <img
-                src="./img/store-opening-location-2.jpg"
-                alt=""
+                src="./img/store-opening-location-1.jpg"
+                alt="これまでの出店場所"
                 class="post-location__img"
+                width="204"
+                height="150"
               />
+            </a>
+          </div>
+          <div class="post-location__content-wrapper">
+            <div class="post-location__upper-row">
+              <span class="post-location__date">2020/12/15</span>
+              <span class="post-location__category">カテゴリ名</span>
             </div>
-            <div class="post-location__content-wrapper">
-              <div class="post-location__upper-row">
-                <span class="post-location__date">2020/12/15</span>
-                <span class="post-location__category">カテゴリ名</span>
-              </div>
+            <a href="">
               <h3 class="post-location__title">
                 実施例のタイトルが入ります実施例のタイトルが入ります
               </h3>
-              <p class="post-location__text">
-                記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
-              </p>
-            </div>
-          </a>
+            </a>
+            <p class="post-location__text">
+              記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
+            </p>
+          </div>
         </li>
-        <li class="post-location__box__outer">
-          <a href="" class="post-location__box">
-            <div class="post-location__img__outer">
+        <li class="post-location__box">
+          <div class="post-location__img__outer">
+            <a href="これまでの出店場所">
               <img
-                src="./img/store-opening-location-3.jpg"
-                alt=""
+                src="./img/store-opening-location-1.jpg"
+                alt="これまでの出店場所"
                 class="post-location__img"
+                width="204"
+                height="150"
               />
+            </a>
+          </div>
+          <div class="post-location__content-wrapper">
+            <div class="post-location__upper-row">
+              <span class="post-location__date">2020/12/15</span>
+              <span class="post-location__category">カテゴリ名</span>
             </div>
-            <div class="post-location__content-wrapper">
-              <div class="post-location__upper-row">
-                <span class="post-location__date">2020/12/15</span>
-                <span class="post-location__category">カテゴリ名</span>
-              </div>
-              <h3 class="post-location__title">
-                実施例のタイトルが入ります実施例のタイトルが入ります実施例のタイトルが入ります実施例のタイトル
-              </h3>
-              <p class="post-location__text">
-                記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
-              </p>
-            </div>
-          </a>
-        </li>
-        <li class="post-location__box__outer">
-          <a href="" class="post-location__box">
-            <div class="post-location__img__outer">
-              <img
-                src="./img/store-opening-location-2.jpg"
-                alt=""
-                class="post-location__img"
-              />
-            </div>
-            <div class="post-location__content-wrapper">
-              <div class="post-location__upper-row">
-                <span class="post-location__date">2020/12/15</span>
-                <span class="post-location__category">カテゴリ名</span>
-              </div>
+            <a href="">
               <h3 class="post-location__title">
                 実施例のタイトルが入ります実施例のタイトルが入ります
               </h3>
-              <p class="post-location__text">
-                記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
-              </p>
+            </a>
+            <p class="post-location__text">
+              記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
+            </p>
+          </div>
+        </li>
+        <li class="post-location__box">
+          <div class="post-location__img__outer">
+            <a href="">
+              <img
+                src="./img/store-opening-location-1.jpg"
+                alt="これまでの出店場所"
+                class="post-location__img"
+                width="204"
+                height="150"
+              />
+            </a>
+          </div>
+          <div class="post-location__content-wrapper">
+            <div class="post-location__upper-row">
+              <span class="post-location__date">2020/12/15</span>
+              <span class="post-location__category"
+                >カテゴリ名カテゴリ名カテゴリ</span
+              >
             </div>
-          </a>
+            <a href="">
+              <h3 class="post-location__title">
+                実施例のタイトルが入ります実施例のタイトルが入ります
+              </h3>
+            </a>
+            <p class="post-location__text">
+              記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が入ります記事の内容が[...]
+            </p>
+          </div>
         </li>
       </ul>
       <div class="global-btn__outer">
@@ -790,7 +829,7 @@
         <img
           src="./img/footer-logo.png"
           class="footer__logo"
-          alt=""
+          alt="石修堂のロゴマーク"
           width="147"
           height="37"
         />
@@ -801,9 +840,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- swiper -->
-    <script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- smooth-scroll -->
     <script src="./plugins/smooth-scroll-polyfills.js"></script>
+    <script src="./plugins/smooth-scroll.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>

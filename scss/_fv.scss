@@ -108,7 +108,8 @@
       font-size: convertVw(27, 1109);
 
       &__box {
-        left: 19%;
+        width: 39%;
+        left: 20%;
       }
     }
   }
@@ -137,6 +138,13 @@
 
     &__title {
       font-size: convertVw(23, 767);
+      &:first-child {
+        margin-bottom: -1rem;
+      }
+      &__box {
+        width: 46%;
+        left: 20%;
+      }
     }
   }
 
@@ -169,6 +177,11 @@
       font-size: convertVw(13, 500);
       &:first-child {
         margin-bottom: -1rem;
+      }
+
+      &__box {
+        top: 69%;
+        width: 45%;
       }
     }
   }

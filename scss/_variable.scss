@@ -22,6 +22,11 @@
   src: url("./fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
 }
 @font-face {
+  font-family: "m-plus-rounded-1c-medium";
+  src: url("./fonts/MPLUSRounded1c-Medium.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "sourcehansans-jp-regular";
   src: url("./fonts/SourceHanSans-Regular.otf") format("opentype");
 }
@@ -90,7 +95,6 @@ $z-index-xx: 80;
 /***********************************
 * animation
 ***********************************/
-
 
 @keyframes popup {
   0% {

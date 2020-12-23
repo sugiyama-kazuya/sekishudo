@@ -20,6 +20,11 @@
 }
 
 @font-face {
+  font-family: "m-plus-rounded-1c-medium";
+  src: url("./fonts/MPLUSRounded1c-Medium.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "sourcehansans-jp-regular";
   src: url("./fonts/SourceHanSans-Regular.otf") format("opentype");
 }
@@ -107,73 +112,8 @@
 }
 
 @font-face {
-  font-family: "sourcehansans-jp-regular";
-  src: url("./fonts/SourceHanSans-Regular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "gloria-hallelujah";
-  src: url("./fonts/GloriaHallelujah-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "century-gothic";
-  src: url("./fonts/CenturyGothic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "century-gothic-bold";
-  src: url("./fonts/GOTHICB0.TTF") format("truetype");
-}
-
-/***********************************
-* color
-***********************************/
-/***********************************
-* break-point
-***********************************/
-/***********************************
-* z-index
-***********************************/
-/***********************************
-* animation
-***********************************/
-@keyframes popup {
-  0% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes popdown {
-  0% {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-/***********************************
-* font
-***********************************/
-/* 使用フォント
-* M PLUS Rounded 1c
-* M PLUS Rounded 1c-Bold
-* SourceHanSansJP
-* GloriaHallelujah
-* CenturyGothic
-*/
-@font-face {
-  font-family: "m-plus-rounded-1c-regular";
-  src: url("./fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "m-plus-rounded-1c-bold";
-  src: url("./fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+  font-family: "m-plus-rounded-1c-medium";
+  src: url("./fonts/MPLUSRounded1c-Medium.ttf") format("truetype");
 }
 
 @font-face {
@@ -244,6 +184,86 @@
 @font-face {
   font-family: "m-plus-rounded-1c-bold";
   src: url("./fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-plus-rounded-1c-medium";
+  src: url("./fonts/MPLUSRounded1c-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sourcehansans-jp-regular";
+  src: url("./fonts/SourceHanSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gloria-hallelujah";
+  src: url("./fonts/GloriaHallelujah-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic";
+  src: url("./fonts/CenturyGothic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "century-gothic-bold";
+  src: url("./fonts/GOTHICB0.TTF") format("truetype");
+}
+
+/***********************************
+* color
+***********************************/
+/***********************************
+* break-point
+***********************************/
+/***********************************
+* z-index
+***********************************/
+/***********************************
+* animation
+***********************************/
+@keyframes popup {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popdown {
+  0% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/***********************************
+* font
+***********************************/
+/* 使用フォント
+* M PLUS Rounded 1c
+* M PLUS Rounded 1c-Bold
+* SourceHanSansJP
+* GloriaHallelujah
+* CenturyGothic
+*/
+@font-face {
+  font-family: "m-plus-rounded-1c-regular";
+  src: url("./fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-plus-rounded-1c-bold";
+  src: url("./fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-plus-rounded-1c-medium";
+  src: url("./fonts/MPLUSRounded1c-Medium.ttf") format("truetype");
 }
 
 @font-face {
@@ -399,10 +419,26 @@
   display: block;
   width: 100%;
   height: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header__burger-btn__bar:first-child {
   margin-bottom: 4px;
+}
+
+.header__burger-btn__bars.burger-btn-active .header__burger-btn__bar:nth-of-type(1) {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: rotate(45deg) translate(2px, 5px);
+          transform: rotate(45deg) translate(2px, 5px);
+}
+
+.header__burger-btn__bars.burger-btn-active .header__burger-btn__bar:nth-of-type(2) {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: rotate(-45deg) translate(0px, -3px);
+          transform: rotate(-45deg) translate(0px, -3px);
 }
 
 /***********************************
@@ -541,6 +577,11 @@
 }
 
 @font-face {
+  font-family: "m-plus-rounded-1c-medium";
+  src: url("./fonts/MPLUSRounded1c-Medium.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "sourcehansans-jp-regular";
   src: url("./fonts/SourceHanSans-Regular.otf") format("opentype");
 }
@@ -611,6 +652,11 @@
 }
 
 @font-face {
+  font-family: "m-plus-rounded-1c-medium";
+  src: url("./fonts/MPLUSRounded1c-Medium.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "sourcehansans-jp-regular";
   src: url("./fonts/SourceHanSans-Regular.otf") format("opentype");
 }
@@ -667,9 +713,12 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
-  font-family: "sourcehansans-jp-regular";
   background-color: #fbf9f7;
   letter-spacing: 0.03em;
+}
+
+body {
+  font-family: "sourcehansans-jp-regular", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 body.nav-menu-active {
@@ -911,7 +960,8 @@ button {
 
 .section__title-ja {
   font-size: 3.25rem;
-  font-family: "m-plus-rounded-1c-regular";
+  font-family: "m-plus-rounded-1c-medium";
+  font-weight: 500;
   color: #5e4331;
   line-height: 1.52;
   letter-spacing: 0.05em;
@@ -1061,6 +1111,11 @@ button {
 }
 
 @font-face {
+  font-family: "m-plus-rounded-1c-medium";
+  src: url("./fonts/MPLUSRounded1c-Medium.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "sourcehansans-jp-regular";
   src: url("./fonts/SourceHanSans-Regular.otf") format("opentype");
 }
@@ -1128,6 +1183,11 @@ button {
 @font-face {
   font-family: "m-plus-rounded-1c-bold";
   src: url("./fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-plus-rounded-1c-medium";
+  src: url("./fonts/MPLUSRounded1c-Medium.ttf") format("truetype");
 }
 
 @font-face {
@@ -1207,6 +1267,11 @@ button {
 }
 
 @font-face {
+  font-family: "m-plus-rounded-1c-medium";
+  src: url("./fonts/MPLUSRounded1c-Medium.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "sourcehansans-jp-regular";
   src: url("./fonts/SourceHanSans-Regular.otf") format("opentype");
 }
@@ -1274,6 +1339,11 @@ button {
 @font-face {
   font-family: "m-plus-rounded-1c-bold";
   src: url("./fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-plus-rounded-1c-medium";
+  src: url("./fonts/MPLUSRounded1c-Medium.ttf") format("truetype");
 }
 
 @font-face {
@@ -1432,6 +1502,11 @@ button {
 @font-face {
   font-family: "m-plus-rounded-1c-bold";
   src: url("./fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-plus-rounded-1c-medium";
+  src: url("./fonts/MPLUSRounded1c-Medium.ttf") format("truetype");
 }
 
 @font-face {
@@ -1633,6 +1708,11 @@ button {
 }
 
 @font-face {
+  font-family: "m-plus-rounded-1c-medium";
+  src: url("./fonts/MPLUSRounded1c-Medium.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "sourcehansans-jp-regular";
   src: url("./fonts/SourceHanSans-Regular.otf") format("opentype");
 }
@@ -1792,7 +1872,8 @@ button {
     font-size: 2.43463vw;
   }
   .fv__title__box {
-    left: 19%;
+    width: 39%;
+    left: 20%;
   }
   .swiper-pagination {
     right: 41%;
@@ -1815,6 +1896,13 @@ button {
   }
   .fv__title {
     font-size: 2.9987vw;
+  }
+  .fv__title:first-child {
+    margin-bottom: -1rem;
+  }
+  .fv__title__box {
+    width: 46%;
+    left: 20%;
   }
   .swiper-pagination {
     right: 41%;
@@ -1842,6 +1930,10 @@ button {
   }
   .fv__title:first-child {
     margin-bottom: -1rem;
+  }
+  .fv__title__box {
+    top: 69%;
+    width: 45%;
   }
   .swiper-pagination {
     bottom: -11%;
@@ -1872,6 +1964,11 @@ button {
 @font-face {
   font-family: "m-plus-rounded-1c-bold";
   src: url("./fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-plus-rounded-1c-medium";
+  src: url("./fonts/MPLUSRounded1c-Medium.ttf") format("truetype");
 }
 
 @font-face {
@@ -2150,6 +2247,7 @@ button {
 }
 
 .current-location__content {
+  color: #494949;
   font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2255,13 +2353,6 @@ button {
   padding: 0 1rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.news__box:hover {
-  opacity: 0.7;
-}
-
-.news__box__outer {
   width: calc(100% / 4);
 }
 
@@ -2271,6 +2362,10 @@ button {
   border-radius: 25%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.news__img:hover {
+  opacity: 0.7;
 }
 
 .news__date {
@@ -2286,6 +2381,15 @@ button {
   color: #494949;
   line-height: 1.6;
   letter-spacing: 0.03em;
+  height: 48px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.news__title:hover {
+  opacity: 0.7;
 }
 
 /***********************************
@@ -2297,11 +2401,11 @@ button {
     margin-bottom: 4rem;
   }
   .news__date {
-    font-size: 0.99188vw;
+    font-size: 1.3rem;
     margin-bottom: 4px;
   }
   .news__title {
-    font-size: 1.17223vw;
+    font-size: 1.4rem;
   }
 }
 
@@ -2325,6 +2429,19 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: calc(100% / 2);
+  }
+  .news__box-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2332,22 +2449,27 @@ button {
         -ms-flex-align: center;
             align-items: center;
   }
-  .news__box__outer {
-    width: calc(100% / 2);
-  }
   .news__img {
-    width: 90%;
+    width: 100%;
   }
   .news__date {
     text-align: center;
-    font-size: 1.30378vw;
+    font-size: 1.2rem;
     margin-bottom: 6px;
   }
   .news__title {
     text-align: center;
     width: 80%;
-    font-size: 1.56454vw;
+    font-size: 1.4rem;
     margin-bottom: 3rem;
+  }
+  .news__title-outer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -2374,8 +2496,11 @@ button {
   .news__box__outer {
     width: 100%;
   }
-  .news__img {
+  .news__box-inner {
     width: 80%;
+  }
+  .news__img {
+    width: 100%;
     height: 15rem;
     border-radius: 5rem;
   }
@@ -2437,6 +2562,11 @@ button {
   text-align: center;
   color: #494949;
   letter-spacing: 0.03em;
+  height: 52px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .menu-list__upper-row__price {
@@ -2500,6 +2630,11 @@ button {
   color: #494949;
   margin-bottom: 0.5rem;
   letter-spacing: 0.03em;
+  height: 45px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .menu-list__lower-row__price {
@@ -2530,6 +2665,11 @@ button {
     font-size: 1.44274vw;
     text-align: center;
     color: #494949;
+    height: clamp(35px, 4.05771vw, 45px);
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
   .menu-list__upper-row__price {
     font-size: 1.2624vw;
@@ -2565,6 +2705,11 @@ button {
   }
   .menu-list__lower-row__title {
     font-size: 1.2624vw;
+    height: clamp(32px, 3.7872vw, 42px);
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
   .menu-list__lower-row__price {
     font-size: 1.08206vw;
@@ -2609,6 +2754,11 @@ button {
     font-size: 1.4rem;
     text-align: center;
     margin-bottom: 1rem;
+    height: 40px;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
   .menu-list__upper-row__price {
     font-size: 1.2rem;
@@ -2640,6 +2790,11 @@ button {
   }
   .menu-list__lower-row__title {
     font-size: 1.3rem;
+    height: 38px;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
   .menu-list__lower-row__price {
     font-size: 1.3rem;
@@ -2705,10 +2860,10 @@ button {
   display: flex;
   padding: 0 2.66667vw;
   margin-bottom: 3rem;
+  width: calc(100% / 2);
 }
 
 .post-location__box__outer {
-  width: calc(100% / 2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2725,6 +2880,10 @@ button {
      object-fit: cover;
 }
 
+.post-location__img:hover {
+  opacity: 0.7;
+}
+
 .post-location__img__outer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2738,6 +2897,16 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 1rem 0 1rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .post-location__upper-row {
@@ -2779,6 +2948,10 @@ button {
   font-size: 15px;
   color: #494949;
   margin-bottom: 1rem;
+}
+
+.post-location__title:hover {
+  opacity: 0.7;
 }
 
 .post-location__text {
@@ -2900,18 +3073,54 @@ button {
 ***********************************/
 @media (max-width: 500px) {
   .post-location__img {
-    width: 40vw;
-    height: 30vw;
+    width: 100%;
+    height: 15rem;
     border-radius: 10vw;
   }
+  .post-location__img__outer {
+    width: 80%;
+  }
+  .post-location__img__outer a {
+    width: 100%;
+  }
+  .post-location__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .post-location__date {
-    font-size: 1.6vw;
+    font-size: 1rem;
+    margin-bottom: 0;
   }
   .post-location__title {
-    font-size: 2.6vw;
+    font-size: 1.3rem;
   }
   .post-location__text {
-    font-size: 1.6vw;
+    font-size: 1rem;
+    width: 90%;
+  }
+  .post-location__content-wrapper {
+    padding-top: 2rem;
+    width: 70%;
+  }
+  .post-location__upper-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -3060,7 +3269,7 @@ button {
 .contact__tell__icon {
   width: 4.5rem;
   height: 3.7rem;
-  background-image: url(../img/tell-icon.png);
+  background-image: url(./img/tell-icon.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
