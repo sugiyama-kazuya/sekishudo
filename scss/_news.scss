@@ -11,14 +11,7 @@
     height: auto;
     padding: 0 1rem;
     box-sizing: border-box;
-
-    &:hover {
-      opacity: 0.7;
-    }
-
-    &__outer {
-      width: calc(100% / 4);
-    }
+    width: calc(100% / 4);
   }
 
   &__img {
@@ -26,6 +19,9 @@
     height: auto;
     border-radius: 25%;
     object-fit: cover;
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   &__date {
@@ -41,6 +37,14 @@
     color: $text-black;
     line-height: 1.6;
     letter-spacing: 0.03em;
+    height: 48px;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
 
@@ -54,12 +58,12 @@
     margin-bottom: 4rem;
 
     &__date {
-      font-size: convertVw(11, 1109);
+      font-size: 1.3rem;
       margin-bottom: 4px;
     }
 
     &__title {
-      font-size: convertVw(13, 1109);
+      font-size: 1.4rem;
     }
   }
 }
@@ -78,29 +82,37 @@
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      width: calc(100% / 2);
 
-      &__outer {
-        width: calc(100% / 2);
+      &-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
     }
 
     &__img {
-      width: 90%;
+      width: 100%;
     }
 
     &__date {
       text-align: center;
-      font-size: convertVw(10, 767);
+      font-size: 1.2rem;
       margin-bottom: 6px;
     }
 
     &__title {
       text-align: center;
       width: 80%;
-      font-size: convertVw(12, 767);
+      font-size: 1.4rem;
       margin-bottom: 3rem;
+
+      &-outer {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 }
@@ -122,10 +134,13 @@
       &__outer {
         width: 100%;
       }
+      &-inner {
+        width: 80%;
+      }
     }
 
     &__img {
-      width: 80%;
+      width: 100%;
       height: 15rem;
       border-radius: 5rem;
     }
